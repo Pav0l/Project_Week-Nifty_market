@@ -129,8 +129,40 @@ table {
 * {
   box-sizing: border-box;
 }
+html {
+  font-size: 62.5%;
+}
 html,
 body {
-  margin: 0;
-  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+h1 span {
+  font-size: 4rem;
+  font-weight: 1000;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p,
+a,
+ul,
+li,
+span {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+.flex-element {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
 }
