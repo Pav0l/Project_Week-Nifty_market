@@ -160,9 +160,93 @@ a {
 img {
   max-width: 100%;
 }
-.flex-element {
+.btn-style {
+  color: white;
+  font-weight: bold;
+  background-color: #E27D60;
+  border: 1px solid #E27D60;
+  cursor: pointer;
+}
+header div.navbar-area {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+  padding: 0 1.5rem;
+  position: relative;
+  width: 100%;
+}
+header div.navbar-area div.dropdown {
+  position: absolute;
+  top: 25px;
+}
+header div.navbar-area div.dropdown .dropdown-btn {
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+header div.navbar-area div.dropdown nav.dropdown-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  color: #E27D60;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  left: 0;
+}
+.hero {
+  width: 100%;
+  position: relative;
+  margin: 2rem 0;
+}
+.hero .bg-img {
+  background-image: url("../assets/header_img_1.jpg");
+  background-size: cover;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  opacity: 0.4;
+  margin: 2rem 0;
+}
+.hero .hero-text {
+  text-align: center;
+  color: white;
+  padding-top: 2rem;
+}
+.hero .hero-search {
+  background-color: white;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 1rem 0;
+  margin: 1rem auto;
+  width: 75%;
+}
+.hero .hero-search form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.hero .hero-search form input,
+.hero .hero-search form select {
+  padding: 2rem;
+  margin: 0 0 1.5rem;
+  border-radius: 3px;
+  border: 1px solid grey;
+  width: 80%;
+  opacity: 0.8;
+}
+.hero .hero-search form input:first-child,
+.hero .hero-search form select:first-child {
+  margin-top: 1.5rem;
+}
+.hero .hero-search form .search-btn {
+  padding: 1.5rem 4rem;
+  border-radius: 4px;
 }

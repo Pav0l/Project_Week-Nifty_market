@@ -1,4 +1,32 @@
-
-.flex-element{
+header div.navbar-area {
     .flex(space-between, center, row);
+    padding: 0 1.5rem;
+    position: relative;
+    width: 100%;
+
+    div.dropdown {
+        // z-index: 2;
+        position: absolute;
+        top: 25px;
+        .dropdown-btn {
+            border: 1px solid grey;
+            border-radius: 5px;
+        }
+
+        nav.dropdown-content {
+            .flex(flex-start, center, column);
+            background-color: white;
+            color: @redish;
+            position: absolute;
+            top: 100%;
+            width: 100%;
+            left: 0;          
+
+        }
+
+        nav.dropdown-hidden {
+
+        }
+    }
+    
 }
