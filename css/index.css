@@ -207,7 +207,6 @@ header div.navbar-area .btn-login {
 }
 header div.navbar-area .nav-btn .btn-login {
   background-color: #47B3A3;
-  border: 1px solid #47B3A3;
 }
 .hero {
   width: 100%;
@@ -302,7 +301,6 @@ header div.navbar-area .nav-btn .btn-login {
 }
 .featured-card img {
   border-radius: 4px;
-  border: 1px solid white;
   background-color: #85cdca;
   margin: 2rem auto;
 }
