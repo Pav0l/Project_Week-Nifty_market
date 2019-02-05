@@ -196,6 +196,15 @@ header div.navbar-area div.dropdown nav.dropdown-content {
   width: 100%;
   left: 0;
 }
+header div.navbar-area .nav-btn .btn-signup,
+header div.navbar-area .btn-login {
+  padding: 1rem;
+  border-radius: 4px;
+}
+header div.navbar-area .nav-btn .btn-login {
+  background-color: #47B3A3;
+  border: 1px solid #47B3A3;
+}
 .hero {
   width: 100%;
   position: relative;
