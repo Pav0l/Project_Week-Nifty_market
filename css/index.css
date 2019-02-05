@@ -147,6 +147,9 @@ h3,
 h3 a {
   font-size: 2.8rem;
 }
+h4 {
+  font-size: 2rem;
+}
 p,
 a,
 ul,
@@ -488,4 +491,30 @@ header div.navbar-area .nav-btn .btn-login {
   padding: 1rem 1.5rem;
   border-radius: 0 4px 4px 0;
   border: none;
+}
+footer {
+  width: 90%;
+  margin: 2rem auto 0;
+}
+footer .footer-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: none;
+  flex-direction: row;
+}
+footer .footer-section .company-info {
+  width: 40%;
+}
+footer .footer-section .contact {
+  width: 40%;
+  line-height: 6rem;
+}
+footer .social-links {
+  text-align: center;
+  margin-top: 1rem;
+}
+footer .social-links a {
+  font-size: 2rem;
+  margin: 1rem;
+  color: #DF6C4F;
 }
