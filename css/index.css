@@ -259,3 +259,10 @@ header div.navbar-area .nav-btn .btn-login {
   padding: 1.5rem 4rem;
   border-radius: 4px;
 }
+.featured-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #47B3A3;
+}
