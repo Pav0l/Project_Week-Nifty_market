@@ -266,7 +266,7 @@ header div.navbar-area div.dropdown .dropdown-hidden {
 }
 .hero .hero-search form input,
 .hero .hero-search form select {
-  padding: 2rem;
+  padding: 1rem;
   margin: 0 0 1.5rem;
   border-radius: 3px;
   border: 1px solid grey;
@@ -280,6 +280,34 @@ header div.navbar-area div.dropdown .dropdown-hidden {
 .hero .hero-search form .search-btn {
   padding: 1rem 1.5rem;
   border-radius: 4px;
+}
+@media (min-width: 1000px) {
+  .hero .hero-search {
+    width: 50%;
+  }
+  .hero .hero-search form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 2rem;
+  }
+  .hero .hero-search form input,
+  .hero .hero-search form select {
+    margin: 0 1.5rem 0 0;
+    padding: 1rem;
+    width: 56%;
+  }
+  .hero .hero-search form input:first-child,
+  .hero .hero-search form select:first-child {
+    margin-top: 0;
+  }
+  .hero .hero-search form select {
+    width: 24%;
+  }
+  .hero .hero-search form button {
+    width: 20%;
+  }
 }
 .featured-container {
   display: flex;
