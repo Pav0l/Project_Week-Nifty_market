@@ -408,3 +408,36 @@ header div.navbar-area .nav-btn .btn-login {
 .overview-container .btn-see-more a {
   color: white;
 }
+.stats-section {
+  width: 100%;
+  margin: 2rem 0;
+  background-color: #DF6C4F;
+  color: white;
+}
+.stats-section .stats-numbers {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%;
+  height: 100%;
+  padding: 2rem 0;
+  margin: 0 auto;
+}
+.stats-section .stats-numbers div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 5rem;
+  font-size: 2.8rem;
+  text-align: center;
+  min-width: 220px;
+}
+.stats-section .stats-numbers div i,
+.stats-section .stats-numbers span,
+.stats-section .stats-numbers p {
+  font-size: 2.8rem;
+  text-align: center;
+}
