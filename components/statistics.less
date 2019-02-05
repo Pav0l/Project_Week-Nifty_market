@@ -1,0 +1,26 @@
+.stats-section {
+    width: 100%;
+    margin: 2rem 0 0;
+    background-color: @orange;
+    color: white;
+
+    .stats-numbers {
+        .flex(space-around, center, row);
+        flex-wrap: wrap;
+        width: 90%;
+        height: 100%;
+        padding: 2rem 0;
+        margin: 0 auto;
+
+        div {
+            .flex(center, center, column);
+            margin: 5rem;
+            min-width: 220px;
+        }
+
+        div i, span, p {
+            font-size: 2.8rem;
+            text-align: center;
+        }
+    }
+}

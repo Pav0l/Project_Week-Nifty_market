@@ -1,0 +1,52 @@
+.subscribe-section {
+    position: relative;
+    width: 100%;
+
+    .bg-img {
+        background-image: url("../assets/header_img_2.jpg");
+        background-size: cover;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -2;
+        opacity: 0.4;
+    }
+
+    .subscribe-text {
+        .flex(center, center, column);
+        padding: 10rem 0;
+        margin: 0 auto;
+        font-size: 5rem;
+
+        p {
+            line-height: 4rem;
+            padding: 2rem 0;
+        }
+
+        form {
+            width: 70%;
+            max-width: 540px;
+            .flex(center, center, row);
+
+            input {
+                padding: 1rem;
+                border-radius: 4px 0 0 4px;
+                border: 1px solid grey;
+                width: 60%;
+                opacity: 0.8;
+                height: 100%;
+            }
+
+            .search-btn {
+                padding: 1rem 1.5rem;
+                border-radius: 0 4px 4px 0;
+                border: none;
+            }
+        }
+    }
+}
+
+

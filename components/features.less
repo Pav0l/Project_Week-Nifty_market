@@ -1,0 +1,97 @@
+.featured-container {
+    .flex(center, center, column);
+    .grad(@redish, @bluish-green);
+    color: white;
+    text-align: center;
+    padding-top: 4rem;
+
+    .featured-box-collection {
+        .featured-box {
+            max-width: 90%;
+            margin: 1rem auto;
+            background-color: white;
+            border-radius: 4px;
+            position: relative;
+            overflow: hidden;
+
+            .featured-badge {
+                background-color: @orange;
+                transform: rotate(-45deg);
+                position: absolute;
+                line-height: 35px;
+                left: -50px;
+                top: 40px;
+                width: 200px;
+                z-index: 2;
+            }
+        }
+    }
+}
+
+.featured-card {
+    .flex(center, center, column);
+    max-width: 80%;
+    margin: 0 auto;
+    color: #313342;
+
+    img {
+        border-radius: 4px;
+        background-color: @bluish;
+        margin: 2rem auto;
+    }
+
+    .featured-card-text {
+        text-align: left;
+        width: 100%;
+        h3 a {
+            color: #313342;
+        }
+
+        .featured-author {
+            .flex(flex-start, center, row);
+            
+            img {
+                background-color: white;
+                margin: 0 0.5rem 0 0;
+            }
+
+            p a{
+                color: #313342;
+            }
+        }
+
+        .featured-stats {
+            .flex(space-between, center, row);
+            border-top: 1px solid #ebedf2;
+            padding: 2rem 0;
+            margin: 1.2rem 0;
+
+            ul {
+                .flex(flex-start, center, row);
+                li {
+                    margin-right: 1.5rem;
+                }
+
+                li.btn-style {
+                    padding: 0 1rem;
+                    border-radius: 4px;
+                    font-weight: normal;
+                }
+            }
+
+
+        }
+
+    }
+
+}
+
+.featured-text {
+    width: 90%;
+    padding-bottom: 2rem;
+    
+    p {
+        margin-top: 2rem;
+        line-height: 3rem;
+    }
+}

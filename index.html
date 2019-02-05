@@ -1,467 +1,493 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link href="css/index.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link href="./css/index.css" rel="stylesheet" />
 
     <title>NiftyMarket</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <!-- NAVBAR area starts here -->
-        <div>
-            <img src="./assets/logo.png">
-            <nav>
-                <a href="#">Home</a>
-                <a href="#">Market</a>
-                <a href="#">News</a>
-                <a href="#">About</a>
-            </nav>
-            <div>
-                <a href="#">Sign Up</a>
-                <a href="#">Log In</a>
-            </div>
+      <!-- NAVBAR area starts here -->
+      <div class="navbar-area">
+
+        <div class="dropdown">
+          <div class="dropdown-btn">
+            <img src="./assets/menu.png"/>
+          </div>
+          <nav class="dropdown-content dropdown-hidden">
+            <a href="#">Home</a>
+            <a href="#">Market</a>
+            <a href="#">News</a>
+            <a href="#">About</a>
+          </nav>
         </div>
-        <!-- NAVBAR end -->
 
-        <!-- HEADER HERO section start -->
-        <section>
-            <!-- Background image -->
-           <div>
-               <img src="./assets/header_img_1.jpg">
-           </div>
+        <img src="./assets/logo.png" />
+        
+        <div class="dropdown">
+          <div class="dropdown-btn">
+            <i class="fas fa-sign-in-alt"></i>
+          </div>
+          <div class="dropdown-content dropdown-hidden">
+            <a class="btn-style btn-signup" href="#">Sign Up</a>
+            <a class="btn-style btn-login" href="#">Log In</a>
+          </div>
+        </div>
+      </div>
+      <!-- NAVBAR end -->
 
-           <!-- Header text -->
-           <div>
-               <h1>
-                   <span>NiftyMarket</span>
-                   <br>
-                   <span>The place to trade all your NFTs with ease</span>
-               </h1>
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in tincidunt eros. Sed vitae sagittis metus.</p>
-           </div>
+      <!-- HEADER HERO section start -->
+      <section class="hero">
+        <!-- Background image -->
+        <div class="bg-img"></div>
 
-           <!-- Header search bar -->
-           <div>
-                <form>
-                    <input type="text" placeholder="Search">
-                    <select>
-                        <option value="all">All Games</option>
-                        <option value="Fortmight">Fort-might</option>
-                        <option value="Zombie">Zombie Mania</option>
-                        <option value="Kittie">Kittie Universe</option>
-                    </select>
-                    <button type="submit">Search</button>
-                </form>
-           </div>
-        </section>
-        <!-- HEADER HERO section end -->
+        <!-- Header text -->
+        <div class="hero-text">
+          <h1>
+            <span>NiftyMarket</span>
+            <br />
+            <span>The place to trade all your NFTs with ease</span>
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in
+            tincidunt eros. Sed vitae sagittis metus.
+          </p>
+        </div>
 
-        <!-- FEATURED items section -->
-        <section>
-            <div>
-                <!-- Section title -->
-                <div>
-                    <h2> Featured Items</h2>
-                    <p>Pellentesque facilisis the ullamcorper sapien interdum magna pellentesque kequis. Phasellus condimentum eleifend kerat.</p>
-                </div>
-                <!-- Section title end -->
-
-                <!-- Boxes with product items -->
-                <div>
-                    <!-- First item -->
-                    <div>
-                        <div>
-                            <span>Featured</span>
-                        </div>
-                        <div>
-                            <img src="./assets/featured/featured_1.png">
-                            <div>
-                                <h3>
-                                    <a href="#">Wizard Kitties to rule the world</a>
-                                </h3>
-                                <div>
-                                    <i class="far fa-heart"></i>
-                                    <p>
-                                        <a href="#">Cool Author</a>
-                                    </p>
-                                </div>
-                                <div>
-                                    <ul>
-                                        <li>30$</li>
-                                        <li><i class="fas fa-shopping-cart"></i> 3</li>
-                                        <li><span class="icon-heart"></span></li>
-                                    </ul>
-                                    <ul>
-                                        <li>
-                                            <span><i class="far fa-star"></i></span>
-                                            <span><i class="far fa-star"></i></span>
-                                            <span><i class="far fa-star"></i></span>
-                                            <span><i class="far fa-star"></i></span>
-                                            <span><i class="far fa-star"></i></span>
-                                        </li>
-                                        <li>(5)</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Second item -->
-                    <div>
-                        <div>
-                            <span>Featured</span>
-                        </div>
-
-                        <div>
-                            <img src="./assets/featured/featured_2.png">
-                            <div>
-                                <h3>
-                                    <a href="#">You want this item</a>
-                                </h3>
-                                <div>
-                                    <i class="far fa-heart"></i>
-                                    <p>
-                                        <a href="#">Mega Author</a>
-                                    </p>
-                                </div>
-                                <div>
-                                    <ul>
-                                        <li>45$</li>
-                                        <li><i class="fas fa-shopping-cart"></i> 5</li>
-                                        <li><span class="icon-heart"></span></li>
-                                    </ul>
-                                    <ul>
-                                        <li>
-                                            <span><i class="far fa-star"></i></span>
-                                            <span><i class="far fa-star"></i></span>
-                                            <span><i class="far fa-star"></i></span>
-                                            <span><i class="far fa-star"></i></span>
-                                            <span><i class="far fa-star"></i></span>
-                                        </li>
-                                        <li>(5)</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Boxes with product items END-->
-            </div>
-        </section>
-        <!-- FEATURED items end -->
-
-        <!-- ITEMS overview -->
-        <section>
-            <div>
-                <!-- Section title -->
-                <div>
-                    <h2>Items overview</h2>
-                    <p>Pellentesque facilisis the ullamcorper sapien interdum magna pellentesque kequis. Phasellus condimentum eleifend kerat.</p>
-                </div>
-                <!-- Section title end -->
-                
-                <!-- Box links -->
-                <div>
-                    <div>All items</div>
-                    <div>Firt-might</div>
-                    <div>Zombie Mania</div>
-                    <div>Kittie Universe</div>
-                </div>
-                <!-- Box links end -->
-
-                <!-- Box items -->
-                <div>
-                    <!-- First item -->
-                    <div>
-                        <img src="./assets/product_img/fortnite1.png">
-                        <div>
-                            <h3>
-                                <a href="#">Coolio costume</a>
-                            </h3>
-                            <div>
-                                <i class="far fa-heart"></i>
-                                <p>
-                                    <a href="#">Johny Pasta</a>
-                                </p>
-                            </div>
-                            <div>
-                                <ul>
-                                    <li>15$</li>
-                                    <li><i class="fas fa-shopping-cart"></i> 5</li>
-                                    <li><span class="icon-heart"></span></li>
-                                </ul>
-                                <ul>
-                                    <li>
-                                        <span><i class="far fa-star"></i></span>
-                                        <span><i class="far fa-star"></i></span>
-                                        <span><i class="far fa-star"></i></span>
-                                        <span><i class="far fa-star"></i></span>
-                                        <span><i class="far fa-star"></i></span>
-                                    </li>
-                                    <li>(5)</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div> <!-- First item end-->
-
-                    <!-- Second item -->
-                    <div>
-                        <img src="./assets/product_img/kittie1.png">
-                        <div>
-                            <h3>
-                                <a href="#">Adorable Meow</a>
-                            </h3>
-                            <div>
-                                <i class="far fa-heart"></i>
-                                <p>
-                                    <a href="#">Mr. Meow</a>
-                                </p>
-                            </div>
-                            <div>
-                                <ul>
-                                    <li>11$</li>
-                                    <li><i class="fas fa-shopping-cart"></i> 5</li>
-                                    <li><span class="icon-heart"></span></li>
-                                </ul>
-                                <ul>
-                                    <li>
-                                        <span><i class="far fa-star"></i></span>
-                                        <span><i class="far fa-star"></i></span>
-                                        <span><i class="far fa-star"></i></span>
-                                        <span><i class="far fa-star"></i></span>
-                                        <span><i class="far fa-star"></i></span>
-                                    </li>
-                                    <li>(5)</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div> <!-- Second item end-->
-
-                    <!-- Third item -->
-                    <div>
-                        <img src="./assets/product_img/robot1.png">
-                        <div>
-                            <h3>
-                                <a href="#">Bender Wannabe</a>
-                            </h3>
-                            <div>
-                                <i class="far fa-heart"></i>
-                                <p>
-                                    <a href="#">Gear Head</a>
-                                </p>
-                            </div>
-                            <div>
-                                <ul>
-                                    <li>5$</li>
-                                    <li><i class="fas fa-shopping-cart"></i>2</li>
-                                    <li><span class="icon-heart"></span></li>
-                                </ul>
-                                <ul>
-                                    <li>
-                                        <span><i class="far fa-star"></i></span>
-                                        <span><i class="far fa-star"></i></span>
-                                        <span><i class="far fa-star"></i></span>
-                                        <span><i class="far fa-star"></i></span>
-                                        <span><i class="far fa-star"></i></span>
-                                    </li>
-                                    <li>(5)</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div> <!-- Third item end-->
-
-                    <!-- Fourth item -->
-                    <div>
-                        <img src="./assets/product_img/fortnite2.png">
-                        <div>
-                            <h3>
-                                <a href="#">Squid them up!</a>
-                            </h3>
-                            <div>
-                                <i class="far fa-heart"></i>
-                                <p>
-                                    <a href="#">Aquarius Nauticus</a>
-                                </p>
-                            </div>
-                            <div>
-                                <ul>
-                                    <li>30$</li>
-                                    <li><i class="fas fa-shopping-cart"></i>4</li>
-                                    <li><span class="icon-heart"></span></li>
-                                </ul>
-                                <ul>
-                                    <li>
-                                        <span><i class="far fa-star"></i></span>
-                                        <span><i class="far fa-star"></i></span>
-                                        <span><i class="far fa-star"></i></span>
-                                        <span><i class="far fa-star"></i></span>
-                                        <span><i class="far fa-star"></i></span>
-                                    </li>
-                                    <li>(5)</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div> <!-- Fourth item end-->
-
-                    <!-- Fifth item -->
-                    <div>
-                        <img src="./assets/product_img/kittie2.png">
-                        <div>
-                            <h3>
-                                <a href="#">Mouse Catcher</a>
-                            </h3>
-                            <div>
-                                <i class="far fa-heart"></i>
-                                <p>
-                                    <a href="#">Mr. Meow</a>
-                                </p>
-                            </div>
-                            <div>
-                                <ul>
-                                    <li>23$</li>
-                                    <li><i class="fas fa-shopping-cart"></i>1</li>
-                                    <li><span class="icon-heart"></span></li>
-                                </ul>
-                                <ul>
-                                    <li>
-                                        <span><i class="far fa-star"></i></span>
-                                        <span><i class="far fa-star"></i></span>
-                                        <span><i class="far fa-star"></i></span>
-                                        <span><i class="far fa-star"></i></span>
-                                        <span><i class="far fa-star"></i></span>
-                                    </li>
-                                    <li>(5)</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div> <!-- Fifth item end-->
-
-                    <!-- Sixth item -->
-                    <div>
-                        <img src="./assets/product_img/robot2.png">
-                        <div>
-                            <h3>
-                                <a href="#">Frank Nogoodson</a>
-                            </h3>
-                            <div>
-                                <i class="far fa-heart"></i>
-                                <p>
-                                    <a href="#">johny587</a>
-                                </p>
-                            </div>
-                            <div>
-                                <ul>
-                                    <li>5$</li>
-                                    <li><i class="fas fa-shopping-cart"></i>0</li>
-                                    <li><span class="icon-heart"></span></li>
-                                </ul>
-                                <ul>
-                                    <li>
-                                        <span><i class="far fa-star"></i></span>
-                                        <span><i class="far fa-star"></i></span>
-                                        <span><i class="far fa-star"></i></span>
-                                        <span><i class="far fa-star"></i></span>
-                                        <span><i class="far fa-star"></i></span>
-                                    </li>
-                                    <li>(5)</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div> <!-- Sixth item end-->
-
-                    <div>
-                        <a href="#">See more items</a>
-                    </div>
-                </div>
-                <!-- Box items end -->
-
-            </div>
-
-        </section>
-        <!-- ITEMS overview END -->
-
-        <!-- ITEMS counter section -->
-        <section>
-            <div>
-                <img src="./assets/header_img_2.jpg">
-            </div>
-
-            <div>
-                <div>
-                    <i class="fas fa-gamepad"></i>
-                    <span>25,689</span>
-                    <p>Items to trade</p>
-                </div>
-
-                <div>
-                    <i class="fas fa-exchange-alt"></i>
-                    <span>77,689</span>
-                    <p>Total trades</p>
-                </div>
-
-                <div>
-                    <i class="far fa-smile"></i>
-                    <span>42,445</span>
-                    <p>Happy customers</p>
-                </div>
-
-                <div>
-                    <i class="fas fa-users"></i>
-                    <span>89,974</span>
-                    <p>Members</p>
-                </div>
-            </div>
-        </section>
-        <!-- ITEMS counter section END -->
-
-        <!-- SUBSCRIBE section -->
-        <section>
-            <div>
-                <i class="fas fa-envelope-open-text"></i>
-                <p>
-                    Subscribe to get the latest news, listings and offers information.
-                </p>
-                <form action="#">
-                    <input type="text" placeholder="Enter your email adress" required="@">
-                    <button type="submit">Subscribe</button>
-                </form>
-            </div>
-
-        </section>
-        <!-- SUBSCRIBE section end -->
-
-        <!-- FOOTER start -->
-        <footer>
-            <div>
-                <div>
-                    <img src="./assets/logo.png">
-                    <p>
-                        Pellentesque facilisis the ullamcorp keer sapien interdum is the magna pellentesque kequis hasellus keur condimentum eleifend.
-                    </p>
-                </div>
-
-                <div>
-                    <h4>FAQ</h4>
-                    <p>Chat: <a href="#">Discord</a></p>
-                    <p>Email Support: <a href="#">support@niftymarket.com</a></p>
-                    <p><a href="#">Terms</a> & <a href="#">Privacy</a></p>
-                </div>
-            </div>
-
-            <div>
-                <a href="#"><i class="fab fa-facebook-square"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
-        </footer>
-        <!-- FOOTER END -->
-
+        <!-- Header search bar -->
+        <div class="hero-search">
+          <form>
+            <input type="text" placeholder="Search" />
+            <select>
+              <option value="all">All Games</option>
+              <option value="Fortmight">Fort-might</option>
+              <option value="Robot">Robot Mania</option>
+              <option value="Kittie">Kittie Universe</option>
+            </select>
+            <button class="btn-style search-btn" type="submit">Search</button>
+          </form>
+        </div>
+      </section>
+      <!-- HEADER HERO section end -->
     </header>
-</body>
+
+    <!-- FEATURED items section -->
+    <section>
+      <div class="featured-container">
+        <!-- Section title -->
+        <div class="featured-text">
+          <h2>Featured Items</h2>
+          <p>
+            Pellentesque facilisis the ullamcorper sapien interdum magna
+            pellentesque kequis. Phasellus condimentum eleifend kerat.
+          </p>
+        </div>
+        <!-- Section title end -->
+
+        <!-- Boxes with product items -->
+        <div class="featured-box-collection">
+          <!-- First item -->
+          <div class="featured-box">
+            <div class="featured-badge">
+              <span>Featured</span>
+            </div>
+            <div class="featured-card">
+              <img src="./assets/featured/featured_1.png" />
+              <div class="featured-card-text">
+                <h3>
+                  <a href="#">Wizard Kitties to rule the world</a>
+                </h3>
+                <div class="featured-author">
+                  <img src="./assets/auth-img.png" />
+                  <p>
+                    <a href="#">Cool Author</a>
+                  </p>
+                </div>
+                <div class="featured-stats">
+                  <ul>
+                    <li class="btn-style">$30</li>
+                    <li><i class="fas fa-shopping-cart"></i> 3</li>
+                    <li><i class="far fa-heart"></i></li>
+                  </ul>
+                  <ul>
+                    <li>
+                      <span><i class="far fa-star"></i></span>
+                      <span><i class="far fa-star"></i></span>
+                      <span><i class="far fa-star"></i></span>
+                      <span><i class="far fa-star"></i></span>
+                      <span><i class="far fa-star"></i></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Second item -->
+          <div class="featured-box">
+            <div class="featured-badge">
+              <span>Featured</span>
+            </div>
+
+            <div class="featured-card">
+              <img src="./assets/featured/featured_2.png" />
+              <div class="featured-card-text">
+                <h3>
+                  <a href="#">Shark attack 3000!</a>
+                </h3>
+                <div class="featured-author">
+                  <img src="./assets/auth-img.png" />
+                  <p>
+                    <a href="#">Mega Author</a>
+                  </p>
+                </div>
+                <div class="featured-stats">
+                  <ul>
+                    <li class="btn-style">$45</li>
+                    <li><i class="fas fa-shopping-cart"></i> 5</li>
+                    <li><i class="far fa-heart"></i></li>
+                  </ul>
+                  <ul>
+                    <li>
+                      <span><i class="far fa-star"></i></span>
+                      <span><i class="far fa-star"></i></span>
+                      <span><i class="far fa-star"></i></span>
+                      <span><i class="far fa-star"></i></span>
+                      <span><i class="far fa-star"></i></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Boxes with product items END-->
+      </div>
+    </section>
+    <!-- FEATURED items end -->
+
+    <!-- ITEMS overview -->
+    <section>
+      <div class="overview-container">
+        <!-- Section title -->
+        <div class="featured-text">
+          <h2>Items overview</h2>
+          <p>
+            Pellentesque facilisis the ullamcorper sapien interdum magna
+            pellentesque kequis. Phasellus condimentum eleifend kerat.
+          </p>
+        </div>
+        <!-- Section title end -->
+
+        <!-- Box links -->
+        <div class="overview-links">
+          <div class="btn-style link-select" data-item="all">All items</div>
+          <div class="btn-style" data-item="fort">Fortnite</div>
+          <div class="btn-style" data-item="robot">Robot Mania</div>
+          <div class="btn-style" data-item="kittie">Kittie Universe</div>
+        </div>
+        <!-- Box links end -->
+
+        <!-- Box items -->
+        <div>
+          <!-- First item -->
+          <div class="featured-card">
+            <img src="./assets/product_img/fortnite1.png" />
+            <div class="featured-card-text">
+              <h3>
+                <a href="#">Coolio costume</a>
+              </h3>
+              <div class="featured-author">
+                <img src="./assets/auth-img.png" />
+                <p>
+                  <a href="#">Johny Pasta</a>
+                </p>
+              </div>
+              <div class="featured-stats">
+                <ul>
+                  <li class="btn-style">$15</li>
+                  <li><i class="fas fa-shopping-cart"></i> 5</li>
+                  <li><i class="far fa-heart"></i></li>
+                </ul>
+                <ul>
+                  <li>
+                    <span><i class="far fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- First item end-->
+
+          <!-- Second item -->
+          <div class="featured-card">
+            <img src="./assets/product_img/kittie1.png" />
+            <div class="featured-card-text">
+              <h3>
+                <a href="#">Adorable Meow</a>
+              </h3>
+              <div class="featured-author">
+                <img src="./assets/auth-img.png" />
+                <p>
+                  <a href="#">Mr. Meow</a>
+                </p>
+              </div>
+              <div class="featured-stats">
+                <ul>
+                  <li class="btn-style">$11</li>
+                  <li><i class="fas fa-shopping-cart"></i> 5</li>
+                  <li><i class="far fa-heart"></i></li>
+                </ul>
+                <ul>
+                  <li>
+                    <span><i class="far fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Second item end-->
+
+          <!-- Third item -->
+          <div class="featured-card">
+            <img src="./assets/product_img/robot1.png" />
+            <div class="featured-card-text">
+              <h3>
+                <a href="#">Bender Wannabe</a>
+              </h3>
+              <div class="featured-author">
+                <img src="./assets/auth-img.png" />
+                <p>
+                  <a href="#">Gear Head</a>
+                </p>
+              </div>
+              <div class="featured-stats">
+                <ul>
+                  <li class="btn-style">$5</li>
+                  <li><i class="fas fa-shopping-cart"></i>2</li>
+                  <li><i class="far fa-heart"></i></li>
+                </ul>
+                <ul>
+                  <li>
+                    <span><i class="far fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Third item end-->
+
+          <!-- Fourth item -->
+          <div class="featured-card">
+            <img src="./assets/product_img/fortnite2.png" />
+            <div class="featured-card-text">
+              <h3>
+                <a href="#">Squid them up!</a>
+              </h3>
+              <div class="featured-author">
+                <img src="./assets/auth-img.png" />
+                <p>
+                  <a href="#">Aquarius Nauticus</a>
+                </p>
+              </div>
+              <div class="featured-stats">
+                <ul>
+                  <li class="btn-style">$30</li>
+                  <li><i class="fas fa-shopping-cart"></i>4</li>
+                  <li><i class="far fa-heart"></i></li>
+                </ul>
+                <ul>
+                  <li>
+                    <span><i class="far fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Fourth item end-->
+
+          <!-- Fifth item -->
+          <div class="featured-card">
+            <img src="./assets/product_img/kittie2.png" />
+            <div class="featured-card-text">
+              <h3>
+                <a href="#">Mouse Catcher</a>
+              </h3>
+              <div class="featured-author">
+                <img src="./assets/auth-img.png" />
+                <p>
+                  <a href="#">Mr. Meow</a>
+                </p>
+              </div>
+              <div class="featured-stats">
+                <ul>
+                  <li class="btn-style">$23</li>
+                  <li><i class="fas fa-shopping-cart"></i>1</li>
+                  <li><i class="far fa-heart"></i></li>
+                </ul>
+                <ul>
+                  <li>
+                    <span><i class="far fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Fifth item end-->
+
+          <!-- Sixth item -->
+          <div class="featured-card">
+            <img src="./assets/product_img/robot2.png" />
+            <div class="featured-card-text">
+              <h3>
+                <a href="#">Frank Nogoodson</a>
+              </h3>
+              <div class="featured-author">
+                <img src="./assets/auth-img.png" />
+                <p>
+                  <a href="#">johny587</a>
+                </p>
+              </div>
+              <div class="featured-stats">
+                <ul>
+                  <li class="btn-style">$5</li>
+                  <li><i class="fas fa-shopping-cart"></i>0</li>
+                  <li><i class="far fa-heart"></i></li>
+                </ul>
+                <ul>
+                  <li>
+                    <span><i class="far fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Sixth item end-->
+
+          <div class="btn-style btn-see-more">
+            <a href="#">See more items</a>
+          </div>
+        </div>
+        <!-- Box items end -->
+      </div>
+    </section>
+    <!-- ITEMS overview END -->
+
+    <!-- ITEMS counter section -->
+    <section class="stats-section">
+      <div class="stats-numbers">
+        <div>
+          <i class="fas fa-gamepad"></i>
+          <span>25,689</span>
+          <p>Items to trade</p>
+        </div>
+
+        <div>
+          <i class="fas fa-exchange-alt"></i>
+          <span>77,689</span>
+          <p>Total trades</p>
+        </div>
+
+        <div>
+          <i class="far fa-smile"></i>
+          <span>42,445</span>
+          <p>Happy customers</p>
+        </div>
+
+        <div>
+          <i class="fas fa-users"></i>
+          <span>89,974</span>
+          <p>Members</p>
+        </div>
+      </div>
+    </section>
+    <!-- ITEMS counter section END -->
+
+    <!-- SUBSCRIBE section -->
+    <section class="subscribe-section">
+      <div class="bg-img"></div>
+      <div class="subscribe-text">
+        <i class="fas fa-envelope-open-text"></i>
+        <p>
+          Subscribe to get the latest news, listings and offers information.
+        </p>
+        <form action="#">
+          <input
+            type="text"
+            placeholder="Enter your email adress"
+            required="@"
+          />
+          <button class="btn-style search-btn" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
+    <!-- SUBSCRIBE section end -->
+
+    <!-- FOOTER start -->
+    <footer>
+      <div class="footer-section">
+        <div class="company-info">
+          <img src="./assets/logo.png" />
+          <p>
+            Pellentesque facilisis the ullamcorp keer sapien interdum is the
+            magna pellentesque kequis hasellus keur condimentum eleifend.
+          </p>
+        </div>
+
+        <div class="contact">
+          <h4>Contacts:</h4>
+          <p>Chat: <a href="#">Discord</a></p>
+          <p>Email Support: <a href="#">support@niftymarket.com</a></p>
+          <p><a href="#">Terms</a> & <a href="#">Privacy</a></p>
+        </div>
+      </div>
+
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook-square"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </footer>
+    <!-- FOOTER END -->
+
+    <script src="./components/navbar/navbar.js"></script>
+  </body>
 </html>
