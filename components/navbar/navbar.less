@@ -1,0 +1,58 @@
+header div.navbar-area {
+    .flex(space-between, center, row);
+    padding: 0 1.5rem;
+    position: relative;
+    width: 100%;
+
+    div.dropdown {
+        z-index: 2;
+
+        .dropdown-btn {
+            border: 1px solid grey;
+            border-radius: 4px;
+            background-color: @orange;
+            cursor: pointer;
+
+            i {
+                font-size: 5rem;
+                color: white;
+            }
+
+            &:hover {
+                background-color: @green;
+            }
+        }
+
+        .dropdown-content {
+            .flex(flex-start, center, column);
+            background-color: white;
+            color: @redish;
+            position: absolute;
+            top: 100%;
+            width: 100%;
+            left: 0;
+
+            a {
+                color: @green;
+                padding: 0.5rem 0;
+                z-index: 2;
+            }
+
+            .btn-signup, .btn-login {
+                padding: 1rem 1.5rem;
+                border-radius: 4px;
+                font-weight: normal;
+                color: white;
+                margin-bottom: 1rem;
+            }
+        
+            .btn-login {
+                background-color: @bluish-green;
+            }
+        }
+
+        .dropdown-hidden {
+            display: none;
+        }
+    }
+}

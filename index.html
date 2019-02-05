@@ -22,23 +22,29 @@
     <header>
       <!-- NAVBAR area starts here -->
       <div class="navbar-area">
-        <div>
-          <div class="dropdown">
-            <div class="dropdown-btn">
-              <img src="./assets/burger.PNG" />
-            </div>
-            <nav class="dropdown-content dropdown-hidden">
-              <a href="#">Home</a>
-              <a href="#">Market</a>
-              <a href="#">News</a>
-              <a href="#">About</a>
-            </nav>
+
+        <div class="dropdown">
+          <div class="dropdown-btn">
+            <img src="./assets/menu.png"/>
           </div>
+          <nav class="dropdown-content dropdown-hidden">
+            <a href="#">Home</a>
+            <a href="#">Market</a>
+            <a href="#">News</a>
+            <a href="#">About</a>
+          </nav>
         </div>
+
         <img src="./assets/logo.png" />
-        <div class="nav-btn">
-          <a class="btn-style btn-signup" href="#">Sign Up</a>
-          <a class="btn-style btn-login" href="#">Log In</a>
+        
+        <div class="dropdown">
+          <div class="dropdown-btn">
+            <i class="fas fa-sign-in-alt"></i>
+          </div>
+          <div class="dropdown-content dropdown-hidden">
+            <a class="btn-style btn-signup" href="#">Sign Up</a>
+            <a class="btn-style btn-login" href="#">Log In</a>
+          </div>
         </div>
       </div>
       <!-- NAVBAR end -->
@@ -481,5 +487,7 @@
       </div>
     </footer>
     <!-- FOOTER END -->
+
+    <script src="./components/navbar/navbar.js"></script>
   </body>
 </html>

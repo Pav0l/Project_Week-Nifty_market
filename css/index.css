@@ -181,14 +181,22 @@ header div.navbar-area {
   width: 100%;
 }
 header div.navbar-area div.dropdown {
-  position: absolute;
-  top: 25px;
+  z-index: 2;
 }
 header div.navbar-area div.dropdown .dropdown-btn {
   border: 1px solid grey;
-  border-radius: 5px;
+  border-radius: 4px;
+  background-color: #DF6C4F;
+  cursor: pointer;
 }
-header div.navbar-area div.dropdown nav.dropdown-content {
+header div.navbar-area div.dropdown .dropdown-btn i {
+  font-size: 5rem;
+  color: white;
+}
+header div.navbar-area div.dropdown .dropdown-btn:hover {
+  background-color: #49c5b6;
+}
+header div.navbar-area div.dropdown .dropdown-content {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -200,13 +208,24 @@ header div.navbar-area div.dropdown nav.dropdown-content {
   width: 100%;
   left: 0;
 }
-header div.navbar-area .nav-btn .btn-signup,
-header div.navbar-area .btn-login {
+header div.navbar-area div.dropdown .dropdown-content a {
+  color: #49c5b6;
+  padding: 0.5rem 0;
+  z-index: 2;
+}
+header div.navbar-area div.dropdown .dropdown-content .btn-signup,
+header div.navbar-area div.dropdown .dropdown-content .btn-login {
   padding: 1rem 1.5rem;
   border-radius: 4px;
+  font-weight: normal;
+  color: white;
+  margin-bottom: 1rem;
 }
-header div.navbar-area .nav-btn .btn-login {
+header div.navbar-area div.dropdown .dropdown-content .btn-login {
   background-color: #47B3A3;
+}
+header div.navbar-area div.dropdown .dropdown-hidden {
+  display: none;
 }
 .hero {
   width: 100%;
