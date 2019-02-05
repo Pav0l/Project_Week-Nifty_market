@@ -410,7 +410,7 @@ header div.navbar-area .nav-btn .btn-login {
 }
 .stats-section {
   width: 100%;
-  margin: 2rem 0;
+  margin: 2rem 0 0;
   background-color: #DF6C4F;
   color: white;
 }
@@ -438,4 +438,54 @@ header div.navbar-area .nav-btn .btn-login {
 .stats-section .stats-numbers p {
   font-size: 2.8rem;
   text-align: center;
+}
+.subscribe-section {
+  position: relative;
+  width: 100%;
+}
+.subscribe-section .bg-img {
+  background-image: url("../assets/header_img_2.jpg");
+  background-size: cover;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  opacity: 0.4;
+}
+.subscribe-section .subscribe-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10rem 0;
+  margin: 0 auto;
+  font-size: 5rem;
+}
+.subscribe-section .subscribe-text p {
+  line-height: 4rem;
+  padding: 2rem 0;
+}
+.subscribe-section .subscribe-text form {
+  width: 70%;
+  max-width: 540px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.subscribe-section .subscribe-text form input {
+  padding: 1rem;
+  border-radius: 4px 0 0 4px;
+  border: 1px solid grey;
+  width: 60%;
+  opacity: 0.8;
+  height: 100%;
+}
+.subscribe-section .subscribe-text form .search-btn {
+  padding: 1rem 1.5rem;
+  border-radius: 0 4px 4px 0;
+  border: none;
 }
