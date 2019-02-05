@@ -6,6 +6,7 @@
     padding-top: 4rem;
 
     .featured-box-collection {
+        padding: 2em 0;
         .featured-box {
             max-width: 90%;
             margin: 1rem auto;
@@ -24,19 +25,22 @@
                 width: 200px;
                 z-index: 2;
             }
-        }
+        }        
     }
 }
 
-.featured-card {
+.card-wrapper {
     .flex(center, center, column);
     max-width: 80%;
     margin: 0 auto;
     color: #313342;
 
+    @media @desktop {
+        max-width: 33%;
+    }
+
     img {
         border-radius: 4px;
-        background-color: @bluish;
         margin: 2rem auto;
     }
 
@@ -78,12 +82,8 @@
                     font-weight: normal;
                 }
             }
-
-
         }
-
     }
-
 }
 
 .featured-text {
@@ -93,5 +93,24 @@
     p {
         margin-top: 2rem;
         line-height: 3rem;
+    }
+}
+
+@media @desktop {
+    .featured-container {
+        flex: none;
+
+        .featured-box-collection {
+            .flex(space-around, center, row);
+            width: 90%;
+
+            .featured-box {
+                width: 45%;
+
+                .card-wrapper {
+                    max-width: 90%;
+                }
+            }
+        }
     }
 }

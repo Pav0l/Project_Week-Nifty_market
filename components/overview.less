@@ -10,7 +10,7 @@
         border-radius: 2px;
         display: inline-box;
         width: 90%;
-        .flex(flex-start, center, row);
+        .flex(center, center, row);
         flex-wrap: wrap;
         padding: 1rem;
         margin: 2rem auto;
@@ -28,7 +28,7 @@
         }
     }
 
-    .featured-card {
+    .card-wrapper {
         border-radius: 4px;
         border: 1px solid #ebedf2;
         margin-top: 3rem;
@@ -51,6 +51,13 @@
 
         a {
             color: white;
+        }
+    }
+
+    @media @desktop {
+        .overview-cards-container {
+            .flex(space-around, center, row);
+            flex-wrap: wrap;
         }
     }
 }

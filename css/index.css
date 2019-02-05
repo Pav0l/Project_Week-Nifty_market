@@ -319,6 +319,9 @@ header div.navbar-area div.dropdown .dropdown-hidden {
   text-align: center;
   padding-top: 4rem;
 }
+.featured-container .featured-box-collection {
+  padding: 2em 0;
+}
 .featured-container .featured-box-collection .featured-box {
   max-width: 90%;
   margin: 1rem auto;
@@ -337,7 +340,7 @@ header div.navbar-area div.dropdown .dropdown-hidden {
   width: 200px;
   z-index: 2;
 }
-.featured-card {
+.card-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -346,32 +349,36 @@ header div.navbar-area div.dropdown .dropdown-hidden {
   margin: 0 auto;
   color: #313342;
 }
-.featured-card img {
+@media (min-width: 1000px) {
+  .card-wrapper {
+    max-width: 33%;
+  }
+}
+.card-wrapper img {
   border-radius: 4px;
-  background-color: #85cdca;
   margin: 2rem auto;
 }
-.featured-card .featured-card-text {
+.card-wrapper .featured-card-text {
   text-align: left;
   width: 100%;
 }
-.featured-card .featured-card-text h3 a {
+.card-wrapper .featured-card-text h3 a {
   color: #313342;
 }
-.featured-card .featured-card-text .featured-author {
+.card-wrapper .featured-card-text .featured-author {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
 }
-.featured-card .featured-card-text .featured-author img {
+.card-wrapper .featured-card-text .featured-author img {
   background-color: white;
   margin: 0 0.5rem 0 0;
 }
-.featured-card .featured-card-text .featured-author p a {
+.card-wrapper .featured-card-text .featured-author p a {
   color: #313342;
 }
-.featured-card .featured-card-text .featured-stats {
+.card-wrapper .featured-card-text .featured-stats {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -380,16 +387,16 @@ header div.navbar-area div.dropdown .dropdown-hidden {
   padding: 2rem 0;
   margin: 1.2rem 0;
 }
-.featured-card .featured-card-text .featured-stats ul {
+.card-wrapper .featured-card-text .featured-stats ul {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
 }
-.featured-card .featured-card-text .featured-stats ul li {
+.card-wrapper .featured-card-text .featured-stats ul li {
   margin-right: 1.5rem;
 }
-.featured-card .featured-card-text .featured-stats ul li.btn-style {
+.card-wrapper .featured-card-text .featured-stats ul li.btn-style {
   padding: 0 1rem;
   border-radius: 4px;
   font-weight: normal;
@@ -401,6 +408,24 @@ header div.navbar-area div.dropdown .dropdown-hidden {
 .featured-text p {
   margin-top: 2rem;
   line-height: 3rem;
+}
+@media (min-width: 1000px) {
+  .featured-container {
+    flex: none;
+  }
+  .featured-container .featured-box-collection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 90%;
+  }
+  .featured-container .featured-box-collection .featured-box {
+    width: 45%;
+  }
+  .featured-container .featured-box-collection .featured-box .card-wrapper {
+    max-width: 90%;
+  }
 }
 .overview-container {
   display: flex;
@@ -418,7 +443,7 @@ header div.navbar-area div.dropdown .dropdown-hidden {
   display: inline-box;
   width: 90%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
@@ -435,12 +460,12 @@ header div.navbar-area div.dropdown .dropdown-hidden {
 .overview-container .overview-links .link-select {
   background-color: #E27D60;
 }
-.overview-container .featured-card {
+.overview-container .card-wrapper {
   border-radius: 4px;
   border: 1px solid #ebedf2;
   margin-top: 3rem;
 }
-.overview-container .featured-card img {
+.overview-container .card-wrapper img {
   border: none;
   margin: 0 0 2rem;
 }
@@ -455,6 +480,15 @@ header div.navbar-area div.dropdown .dropdown-hidden {
 }
 .overview-container .btn-see-more a {
   color: white;
+}
+@media (min-width: 1000px) {
+  .overview-container .overview-cards-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 .stats-section {
   width: 100%;
