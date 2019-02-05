@@ -431,8 +431,6 @@ header div.navbar-area .nav-btn .btn-login {
   align-items: center;
   flex-direction: column;
   margin: 5rem;
-  font-size: 2.8rem;
-  text-align: center;
   min-width: 220px;
 }
 .stats-section .stats-numbers div i,
