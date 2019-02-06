@@ -227,6 +227,28 @@ header div.navbar-area div.dropdown .dropdown-content .btn-login {
 header div.navbar-area div.dropdown .dropdown-hidden {
   display: none;
 }
+@media (min-width: 1000px) {
+  header div.navbar-area img {
+    order: -1;
+  }
+  header div.navbar-area div.dropdown .dropdown-btn {
+    display: none;
+  }
+  header div.navbar-area div.dropdown .dropdown-content {
+    justify-content: space-between;
+    position: inherit;
+  }
+  header div.navbar-area div.dropdown .dropdown-content a {
+    margin: 0 2rem;
+  }
+  header div.navbar-area div.dropdown .dropdown-content .btn-login,
+  header div.navbar-area div.dropdown .dropdown-content .btn-login {
+    margin: 0 1rem;
+  }
+  header div.navbar-area div.dropdown .dropdown-hidden {
+    display: block;
+  }
+}
 .hero {
   width: 100%;
   position: relative;
@@ -257,6 +279,7 @@ header div.navbar-area div.dropdown .dropdown-hidden {
   padding: 1rem 0;
   margin: 1rem auto;
   width: 75%;
+  max-width: 600px;
 }
 .hero .hero-search form {
   display: flex;
@@ -321,6 +344,7 @@ header div.navbar-area div.dropdown .dropdown-hidden {
 }
 .featured-container .featured-box-collection {
   padding: 2em 0;
+  max-width: 1024px;
 }
 .featured-container .featured-box-collection .featured-box {
   max-width: 90%;
@@ -432,6 +456,8 @@ header div.navbar-area div.dropdown .dropdown-hidden {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  max-width: 1024px;
+  margin: 0 auto;
   text-align: center;
   padding-top: 4rem;
   color: black;
@@ -498,7 +524,7 @@ header div.navbar-area div.dropdown .dropdown-hidden {
 }
 .stats-section .stats-numbers {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
@@ -506,13 +532,14 @@ header div.navbar-area div.dropdown .dropdown-hidden {
   height: 100%;
   padding: 2rem 0;
   margin: 0 auto;
+  max-width: 1024px;
 }
 .stats-section .stats-numbers div {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 5rem;
+  margin: 3rem auto;
   min-width: 220px;
 }
 .stats-section .stats-numbers div i,
@@ -573,12 +600,13 @@ header div.navbar-area div.dropdown .dropdown-hidden {
 }
 footer {
   width: 90%;
+  max-width: 1024px;
   margin: 2rem auto 0;
 }
 footer .footer-section {
   display: flex;
-  justify-content: space-around;
-  align-items: none;
+  justify-content: space-between;
+  align-items: flex-start;
   flex-direction: row;
 }
 footer .footer-section .company-info {
