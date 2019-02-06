@@ -1,11 +1,12 @@
 .page-container {
-    .flex(center, center, row);
-    width: 100%;
+    .flex(center, center, column-reverse);
+    width: 100vw;
+    height: 100vh;
 
     .half-screen {
         .flex(center, center, column);
-        width: 50%;
-        height:100vh;
+        width: 100vw;
+        height: 50%;
         text-align: center;
         background-color: @green;
 
@@ -19,31 +20,33 @@
         .flex(center, center, column);
         background-color: white;    
         margin: auto 0;
-        width: 50%;
-        height:100vh;
+        width: 100vw;
+        height: 50%;
+
+        border:1px solid red;
         
         form {
             .flex(center, center, column);
-    
+            border:1px solid blue;
 
-            .container {
+            .container-input-btn {
                 .flex(center, center, column);
                 margin-top: 2rem;
                 width: 90%;
-        
-                input {
-                    width: 80%;
-                    min-width: 300px;
-                    padding: 1rem;
-                    margin: 1rem 0;
-                    border-radius: 100px;
-                    border: 1px solid grey;
-                    background-color: white;
-                }
 
-                .go-sign-up {
-                    float: right;
-                    margin: 1rem 0;
+                border:1px solid green;
+                
+                .input-holder {
+                    .flex(center, center, column);
+                    input {
+                        width: 80%;
+                        min-width: 30rem;
+                        padding: 1rem;
+                        margin: 1rem 0;
+                        border-radius: 100px;
+                        border: 1px solid grey;
+                        background-color: white;
+                    }
                 }
 
                 .btn-wrapper {
@@ -60,8 +63,26 @@
                     }
                 }
             }
+
+            .container-change {
+                .flex(center, center, column);
+                width: 90%;
+                margin: 2rem auto;
+            }
+        }
+    }
+
+    @media @tablet {
+        .flex(center, center, row);
+
+        .half-screen {
+            width: 50%;
+            height: 100vh;
+        }
+
+        .form-container {
+            width: 50%;
+            height: 100vh;
         }
     }
 }
-
-

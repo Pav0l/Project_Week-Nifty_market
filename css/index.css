@@ -681,16 +681,17 @@ footer .social-links a {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
-  width: 100%;
+  flex-direction: column-reverse;
+  width: 100vw;
+  height: 100vh;
 }
 .page-container .half-screen {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 50%;
-  height: 100vh;
+  width: 100vw;
+  height: 50%;
   text-align: center;
   background-color: #49c5b6;
 }
@@ -705,44 +706,73 @@ footer .social-links a {
   flex-direction: column;
   background-color: white;
   margin: auto 0;
-  width: 50%;
-  height: 100vh;
+  width: 100vw;
+  height: 50%;
+  border: 1px solid red;
 }
 .page-container .form-container form {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border: 1px solid blue;
 }
-.page-container .form-container form .container {
+.page-container .form-container form .container-input-btn {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin-top: 2rem;
   width: 90%;
+  border: 1px solid green;
 }
-.page-container .form-container form .container input {
+.page-container .form-container form .container-input-btn .input-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.page-container .form-container form .container-input-btn .input-holder input {
   width: 80%;
-  min-width: 300px;
+  min-width: 30rem;
   padding: 1rem;
   margin: 1rem 0;
   border-radius: 100px;
   border: 1px solid grey;
   background-color: white;
 }
-.page-container .form-container form .container .go-sign-up {
-  float: right;
-  margin: 1rem 0;
-}
-.page-container .form-container form .container .btn-wrapper .btn-signup,
-.page-container .form-container form .container .btn-wrapper .btn-login {
+.page-container .form-container form .container-input-btn .btn-wrapper .btn-signup,
+.page-container .form-container form .container-input-btn .btn-wrapper .btn-login {
   padding: 1rem 1.5rem;
   border-radius: 4px;
   font-weight: normal;
   color: white;
   margin: 1rem 2rem;
 }
-.page-container .form-container form .container .btn-wrapper .btn-login {
+.page-container .form-container form .container-input-btn .btn-wrapper .btn-login {
   background-color: #47B3A3;
+}
+.page-container .form-container form .container-change {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  margin: 2rem auto;
+}
+@media (min-width: 800px) {
+  .page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .page-container .half-screen {
+    width: 50%;
+    height: 100vh;
+  }
+  .page-container .form-container {
+    width: 50%;
+    height: 100vh;
+  }
 }
