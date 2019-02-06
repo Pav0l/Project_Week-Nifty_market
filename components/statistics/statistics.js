@@ -1,36 +1,33 @@
 class Stats {
     constructor(stat) {
-
+        // grab stats item
         this.stat = stat;
-        
+        // grab its text value
         this.text = this.stat.textContent;
+        // grab its datatype
+        this.dataValue = this.stat.dataset.value;        
+        // define the starting point for counter
+        let counter = 0;
 
-        this.dataValue = this.stat.dataset.value;
-
-      // setInterval will repeadetly calls this.toggleContent function UNTIL WHEN? If counter > this.text
-      statsElement.addEventListener('click', () => {        
-        setInterval(() => {
-            // console.log(parseInt(this.dataValue));
-            counter += 100;
+        // add eventlistener with callback that will set setInterval on method
+        // setInterval will repeadetly calls this.toggleContent function counter >= this.dataValue
+        statsElement.addEventListener('click', () => {        
+        let startInt = setInterval(() => {
+            counter += 1;
             this.toggleContent(counter);
-            if (counter > parseInt(this.dataValue)) {
-                console.log('clearinterval happend')
-                clearInterval();
-                // counter = 0;
+            if (counter >= parseInt(this.dataValue)) {
+                clearInterval(startInt);
             }
-        }, 1000) 
+        }, 0.01) 
       });
-
     }
     
+    // pass in the counter value as a text value to be displayed on page
     toggleContent(value) {
-        // this.stat.textContent = value;  // UNCOMMENT THIS OUT TO MAKE IT WORK      
+        this.stat.textContent = value;
     }
 }
 
-let counter = 0;
-
 let statsElement = document.querySelector('.stats-section');
 
-let countUpItems = document.querySelectorAll('span[data-count="countUp"]');
-countUpItems.forEach(stat => new Stats(stat));
+let countUpItems = document.querySelectorAll('span[data-count="countUp"]').forEach(stat => new Stats(stat));
