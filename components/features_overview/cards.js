@@ -20,7 +20,7 @@ const itemsList = [
 ];
 
 // Create new Item and update the itemList array
-const createNewItem = (name, author, cost, game) => {
+function createNewItem(name, author, cost, game) {
     return itemsList.push(new CreateItem(name, author, cost, game));
 }
 
@@ -29,7 +29,6 @@ const contributors = () => {
     const contributorsList = itemsList.map(item => item.author);
     return contributorsList
 }
-// contributors();
 
 // Find top contributor
 const topContributor = cb => {
@@ -46,20 +45,33 @@ const topContributor = cb => {
         // set empty object as an initial value
     }, {});
 
-
     let author;
     // Create array from contributorObj and reduce it to find top contributor
     Object.keys(contributorObj).reduce((acc, item) => {        
         return author = contributorObj[item] > contributorObj[acc] ? item : acc;
     });
-
     return author;
 }
 
-console.log(topContributor(contributors)); // <- logs top contributor, print it on webpage
+// Create new div with updated Top Author - author with the most items on market.
+const formDiv = document.querySelector('.form-container');
+const updateTopAuthor = (cb) => {
+    const newDiv = document.createElement('div');
+    newDiv.innerText = `Top author is ${cb}`;
+    formDiv.appendChild(newDiv);
+}
 
+// grab all values from user form into variables
+const iname = document.querySelector('input[name="iname"]');
+const aname = document.querySelector('input[name="aname"]');
+const icost = document.querySelector('input[name="icost"]');
+const igame = document.querySelector('input[name="igame"]');
 
-
-
-// link button to create Item with eventListener for method createNewItem
-createNewItem('John', 'authoris', '$5', 'Kittie');
+// grab "CREATE" button to create new Item
+const createBtn = document.querySelector('#btn-create');
+//  add CLICK listener and callback to create new item
+createBtn.addEventListener('click', (e) => {
+    createNewItem(iname.value, aname.value, icost.value, igame.value);
+    updateTopAuthor(topContributor(contributors));
+    e.preventDefault();
+});
