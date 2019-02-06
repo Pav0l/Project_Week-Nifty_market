@@ -10,11 +10,11 @@ class Stats {
         let counter = 0;
 
         // add eventlistener with callback that will set setInterval on method
-        // setInterval will repeadetly calls this.toggleContent function counter >= this.dataValue
+        // setInterval will repeadetly calls this.startCounter function counter >= this.dataValue
         statsElement.addEventListener('click', () => {        
         let startInt = setInterval(() => {
             counter += 1;
-            this.toggleContent(counter);
+            this.startCounter(counter);
             if (counter >= parseInt(this.dataValue)) {
                 clearInterval(startInt);
             }
@@ -23,7 +23,7 @@ class Stats {
     }
     
     // pass in the counter value as a text value to be displayed on page
-    toggleContent(value) {
+    startCounter(value) {
         this.stat.textContent = value;
     }
 }
