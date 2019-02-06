@@ -1,0 +1,67 @@
+.page-container {
+    .flex(center, center, row);
+    width: 100%;
+
+    .half-screen {
+        .flex(center, center, column);
+        width: 50%;
+        height:100vh;
+        text-align: center;
+        background-color: @green;
+
+        h2 {
+            padding: 3rem 0;
+            color: white;
+        }
+    }
+
+    .form-container {
+        .flex(center, center, column);
+        background-color: white;    
+        margin: auto 0;
+        width: 50%;
+        height:100vh;
+        
+        form {
+            .flex(center, center, column);
+    
+
+            .container {
+                .flex(center, center, column);
+                margin-top: 2rem;
+                width: 90%;
+        
+                input {
+                    width: 80%;
+                    min-width: 300px;
+                    padding: 1rem;
+                    margin: 1rem 0;
+                    border-radius: 100px;
+                    border: 1px solid grey;
+                    background-color: white;
+                }
+
+                .go-sign-up {
+                    float: right;
+                    margin: 1rem 0;
+                }
+
+                .btn-wrapper {
+                    .btn-signup, .btn-login {
+                        padding: 1rem 1.5rem;
+                        border-radius: 4px;
+                        font-weight: normal;
+                        color: white;
+                        margin: 1rem 2rem;
+                    }
+                
+                    .btn-login {
+                        background-color: @bluish-green;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
