@@ -227,7 +227,7 @@ header div.navbar-area div.dropdown .dropdown-content .btn-login {
 header div.navbar-area div.dropdown .dropdown-hidden {
   display: none;
 }
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
   header div.navbar-area img {
     order: -1;
   }
@@ -271,6 +271,7 @@ header div.navbar-area div.dropdown .dropdown-hidden {
   text-align: center;
   color: white;
   padding-top: 2rem;
+  margin: 0 2rem;
 }
 .hero .hero-search {
   background-color: white;
@@ -410,6 +411,7 @@ header div.navbar-area div.dropdown .dropdown-hidden {
   border-top: 1px solid #ebedf2;
   padding: 2rem 0;
   margin: 1.2rem 0;
+  flex-wrap: wrap;
 }
 .card-wrapper .featured-card-text .featured-stats ul {
   display: flex;
@@ -433,7 +435,7 @@ header div.navbar-area div.dropdown .dropdown-hidden {
   margin-top: 2rem;
   line-height: 3rem;
 }
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
   .featured-container {
     flex: none;
   }
@@ -516,6 +518,16 @@ header div.navbar-area div.dropdown .dropdown-hidden {
     flex-wrap: wrap;
   }
 }
+@media (min-width: 800px) {
+  .overview-container .overview-cards-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 900px;
+  }
+}
 .stats-section {
   width: 100%;
   margin: 2rem 0 0;
@@ -532,7 +544,7 @@ header div.navbar-area div.dropdown .dropdown-hidden {
   height: 100%;
   padding: 2rem 0;
   margin: 0 auto;
-  max-width: 1024px;
+  max-width: 650px;
 }
 .stats-section .stats-numbers div {
   display: flex;
@@ -547,6 +559,11 @@ header div.navbar-area div.dropdown .dropdown-hidden {
 .stats-section .stats-numbers p {
   font-size: 2.8rem;
   text-align: center;
+}
+@media (min-width: 1000px) {
+  .stats-section .stats-numbers {
+    max-width: 1024px;
+  }
 }
 .subscribe-section {
   position: relative;
