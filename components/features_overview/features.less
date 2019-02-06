@@ -9,7 +9,7 @@
         padding: 2em 0;
         max-width: 1024px;
         .featured-box {
-            max-width: 90%;
+            max-width: 100%;
             margin: 1rem auto;
             background-color: white;
             border-radius: 4px;
@@ -30,15 +30,11 @@
     }
 }
 
-.card-wrapper {
+.featured-wrapper {
     .flex(center, center, column);
-    max-width: 80%;
+    max-width: 95%;
     margin: 0 auto;
     color: #313342;
-
-    @media @desktop {
-        max-width: 33%;
-    }
 
     img {
         border-radius: 4px;
@@ -109,7 +105,7 @@
             .featured-box {
                 width: 45%;
 
-                .card-wrapper {
+                .featured-wrapper {
                     max-width: 90%;
                 }
             }

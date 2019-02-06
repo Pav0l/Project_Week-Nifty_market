@@ -73,7 +73,7 @@
             <input type="text" placeholder="Search" />
             <select>
               <option value="all">All Games</option>
-              <option value="Fortmight">Fort-might</option>
+              <option value="Fortnite">Fortnite</option>
               <option value="Robot">Robot Mania</option>
               <option value="Kittie">Kittie Universe</option>
             </select>
@@ -106,7 +106,7 @@
               <span>Featured</span>
             </div>
 
-            <div class="card-wrapper">
+            <div class="featured-wrapper">
               <img src="./assets/featured/featured_1.png" />
               <div class="featured-card-text">
                 <h3>
@@ -145,11 +145,11 @@
               <span>Featured</span>
             </div>
 
-            <div class="card-wrapper">
+            <div class="featured-wrapper">
               <img src="./assets/featured/featured_2.png" />
               <div class="featured-card-text">
                 <h3>
-                  <a href="#">Shark attack 3000!</a>
+                  <a href="#">Shark attack!</a>
                 </h3>
                 <div class="featured-author">
                   <img src="./assets/auth-img.png" />
@@ -197,18 +197,18 @@
 
         <!-- Box links -->
         <div class="overview-links">
-          <div class="btn-style link-select" data-item="all">All items</div>
-          <div class="btn-style" data-item="fort">Fortnite</div>
-          <div class="btn-style" data-item="robot">Robot Mania</div>
-          <div class="btn-style" data-item="kittie">Kittie Universe</div>
-          <div class="btn-style" data-item="dragon">Red Dragons</div>
+          <div class="btn-style link-select ov-link" data-item="all">All items</div>
+          <div class="btn-style ov-link" data-item="fortnite">Fortnite</div>
+          <div class="btn-style ov-link" data-item="robot">Robot Mania</div>
+          <div class="btn-style ov-link" data-item="kittie">Kittie Universe</div>
+          <div class="btn-style ov-link" data-item="dragon">Red Dragons</div>
         </div>
         <!-- Box links end -->
 
         <!-- Box items -->
         <div class="overview-cards-container">
           <!-- First item -->
-          <div class="card-wrapper">
+          <div class="card-wrapper" data-item="fortnite">
             <img src="./assets/product_img/fortnite1.png" />
             <div class="featured-card-text">
               <h3>
@@ -241,7 +241,7 @@
           <!-- First item end-->
 
           <!-- Second item -->
-          <div class="card-wrapper">
+          <div class="card-wrapper" data-item="kittie">
             <img src="./assets/product_img/kittie1.png" />
             <div class="featured-card-text">
               <h3>
@@ -274,7 +274,7 @@
           <!-- Second item end-->
 
           <!-- Third item -->
-          <div class="card-wrapper">
+          <div class="card-wrapper" data-item="robot">
             <img src="./assets/product_img/robot1.png" />
             <div class="featured-card-text">
               <h3>
@@ -307,7 +307,7 @@
           <!-- Third item end-->
 
           <!-- Fourth item -->
-          <div class="card-wrapper">
+          <div class="card-wrapper" data-item="fortnite">
             <img src="./assets/product_img/fortnite2.png" />
             <div class="featured-card-text">
               <h3>
@@ -340,7 +340,7 @@
           <!-- Fourth item end-->
 
           <!-- Fifth item -->
-          <div class="card-wrapper">
+          <div class="card-wrapper" data-item="kittie">
             <img src="./assets/product_img/kittie2.png" />
             <div class="featured-card-text">
               <h3>
@@ -373,7 +373,7 @@
           <!-- Fifth item end-->
 
           <!-- Sixth item -->
-          <div class="card-wrapper">
+          <div class="card-wrapper" data-item="robot">
             <img src="./assets/product_img/robot2.png" />
             <div class="featured-card-text">
               <h3>
@@ -494,5 +494,6 @@
     <!-- FOOTER END -->
 
     <script src="./components/navbar/navbar.js"></script>
+    <script src="./components/features_overview/overview.js"></script>
   </body>
 </html>
