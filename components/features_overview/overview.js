@@ -7,40 +7,36 @@ class ItemLink {
         
         // Check to see if this.itemData is equal to 'all'
         if(this.itemData === 'all'){
-            // If `all` is true, select all cards regardless of their data attribute values
+            // If yes, select all cards
             this.cards = document.querySelectorAll('.card-wrapper');
         } else {
-            // else if `all` is false, only select the cards with matching this.itemData values
+            // else, select the cards with matching this.itemData values
             this.cards = document.querySelectorAll(`.card-wrapper[data-item="${this.itemData}"]`);
         }
 
-        // Map over the newly converted NodeList we just created in our if statement above. 
-        // Convert each this.cards element into a new instance of the TabCard class. Pass in a card object to the TabCard class. 
+        // Map over the NodeList and convert each element into a new instance of the ItemCard class
         this.cards = Array.from(this.cards).map(card => new ItemCard(card));
 
-        // Add a click event that invokes this.selectTab
         this.link.addEventListener('click', () => this.selectTab());
     }
 
     selectTab() {
-
-        // Select all elements with the .tab class on them
+        // Select all elements with the .ov-link class on them
         const links = document.querySelectorAll('.ov-link');
-        // Iterate through the NodeList removing the .active-tab class from each element
+        // Iterate through the NodeList removing the .link-select class from each element
         links.forEach(link => link.classList.remove('link-select'));
-        
-    
-        // Select all of the elements with the .card class on them
+            
+        // Select all of the elements with the .card-wrapper class on them
         const cards = document.querySelectorAll('.card-wrapper');
     
-        // Iterate through the NodeList setting the display style each one to 'none'
+        // Iterate through the NodeList setting the display style to 'none'
         cards.forEach(card => card.style = "display: none");
         
-        // Add a class of ".active-tab" to this.tabElement
+        // Add a class of ".link-select" to this.link
         this.link.classList.add('link-select');
       
         // Notice we are looping through the this.cards array and invoking selectCard() from the TabCard class. Just un-comment the code and study what is happening here.
-        this.cards.forEach(card => card.selectCard());
+        this.cards.forEach(card => card.selectItemCard());
     }
 }
 
@@ -50,17 +46,12 @@ class ItemCard {
     // Assign this.cardItem to the cardItem DOM reference
     this.cardItem = cardItem;
   }
-  selectCard(){
+  selectItemCard(){
     // Update the style of this.cardItem to display = "flex"
     this.cardItem.style = 'display: flex;';
   }
-
 }
 
+// grab all elements with .ov-link class into NodeList and iterate over it creating new class for every element
+let overviewLinks = document.querySelectorAll('.ov-link').forEach(link => new ItemLink(link));
 
-
-
-
-let overviewLinks = document.querySelectorAll('.ov-link');
-overviewLinks.forEach(link => new ItemLink(link));
-// console.log(overviewLinks);
