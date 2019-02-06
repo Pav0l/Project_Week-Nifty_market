@@ -6,8 +6,10 @@
     padding-top: 4rem;
 
     .featured-box-collection {
+        padding: 2em 0;
+        max-width: 1024px;
         .featured-box {
-            max-width: 90%;
+            max-width: 100%;
             margin: 1rem auto;
             background-color: white;
             border-radius: 4px;
@@ -24,19 +26,18 @@
                 width: 200px;
                 z-index: 2;
             }
-        }
+        }        
     }
 }
 
-.featured-card {
+.featured-wrapper {
     .flex(center, center, column);
-    max-width: 80%;
+    max-width: 95%;
     margin: 0 auto;
     color: #313342;
 
     img {
         border-radius: 4px;
-        background-color: @bluish;
         margin: 2rem auto;
     }
 
@@ -65,6 +66,7 @@
             border-top: 1px solid #ebedf2;
             padding: 2rem 0;
             margin: 1.2rem 0;
+            flex-wrap: wrap;
 
             ul {
                 .flex(flex-start, center, row);
@@ -78,12 +80,8 @@
                     font-weight: normal;
                 }
             }
-
-
         }
-
     }
-
 }
 
 .featured-text {
@@ -93,5 +91,24 @@
     p {
         margin-top: 2rem;
         line-height: 3rem;
+    }
+}
+
+@media @tablet {
+    .featured-container {
+        flex: none;
+
+        .featured-box-collection {
+            .flex(space-around, center, row);
+            width: 90%;
+
+            .featured-box {
+                width: 45%;
+
+                .featured-wrapper {
+                    max-width: 90%;
+                }
+            }
+        }
     }
 }

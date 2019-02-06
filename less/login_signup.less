@@ -1,0 +1,88 @@
+.page-container {
+    .flex(center, center, column-reverse);
+    width: 100vw;
+    height: 100vh;
+
+    .half-screen {
+        .flex(center, center, column);
+        width: 100vw;
+        height: 50%;
+        text-align: center;
+        background-color: @green;
+
+        h2 {
+            padding: 3rem 0;
+            color: white;
+        }
+    }
+
+    .form-container {
+        .flex(center, center, column);
+        background-color: white;    
+        margin: auto 0;
+        width: 100vw;
+        height: 50%;
+
+        border:1px solid red;
+        
+        form {
+            .flex(center, center, column);
+            border:1px solid blue;
+
+            .container-input-btn {
+                .flex(center, center, column);
+                margin-top: 2rem;
+                width: 90%;
+
+                border:1px solid green;
+                
+                .input-holder {
+                    .flex(center, center, column);
+                    input {
+                        width: 80%;
+                        min-width: 30rem;
+                        padding: 1rem;
+                        margin: 1rem 0;
+                        border-radius: 100px;
+                        border: 1px solid grey;
+                        background-color: white;
+                    }
+                }
+
+                .btn-wrapper {
+                    .btn-signup, .btn-login {
+                        padding: 1rem 1.5rem;
+                        border-radius: 4px;
+                        font-weight: normal;
+                        color: white;
+                        margin: 1rem 2rem;
+                    }
+                
+                    .btn-login {
+                        background-color: @bluish-green;
+                    }
+                }
+            }
+
+            .container-change {
+                .flex(center, center, column);
+                width: 90%;
+                margin: 2rem auto;
+            }
+        }
+    }
+
+    @media @tablet {
+        .flex(center, center, row);
+
+        .half-screen {
+            width: 50%;
+            height: 100vh;
+        }
+
+        .form-container {
+            width: 50%;
+            height: 100vh;
+        }
+    }
+}

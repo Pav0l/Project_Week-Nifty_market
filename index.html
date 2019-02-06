@@ -28,7 +28,7 @@
             <img src="./assets/menu.png"/>
           </div>
           <nav class="dropdown-content dropdown-hidden">
-            <a href="#">Home</a>
+              <a href="./index.html">Home</a>
             <a href="#">Market</a>
             <a href="#">News</a>
             <a href="#">About</a>
@@ -42,8 +42,8 @@
             <i class="fas fa-sign-in-alt"></i>
           </div>
           <div class="dropdown-content dropdown-hidden">
-            <a class="btn-style btn-signup" href="#">Sign Up</a>
-            <a class="btn-style btn-login" href="#">Log In</a>
+            <a class="btn-style btn-signup" href="./signup.html">Sign Up</a>
+            <a class="btn-style btn-login" href="./login.html">Log In</a>
           </div>
         </div>
       </div>
@@ -73,7 +73,7 @@
             <input type="text" placeholder="Search" />
             <select>
               <option value="all">All Games</option>
-              <option value="Fortmight">Fort-might</option>
+              <option value="Fortnite">Fortnite</option>
               <option value="Robot">Robot Mania</option>
               <option value="Kittie">Kittie Universe</option>
             </select>
@@ -101,14 +101,16 @@
         <div class="featured-box-collection">
           <!-- First item -->
           <div class="featured-box">
+
             <div class="featured-badge">
               <span>Featured</span>
             </div>
-            <div class="featured-card">
+
+            <div class="featured-wrapper" data-item="kittie">
               <img src="./assets/featured/featured_1.png" />
               <div class="featured-card-text">
                 <h3>
-                  <a href="#">Wizard Kitties to rule the world</a>
+                  <a href="#">Wizard Kittie</a>
                 </h3>
                 <div class="featured-author">
                   <img src="./assets/auth-img.png" />
@@ -138,15 +140,16 @@
 
           <!-- Second item -->
           <div class="featured-box">
+
             <div class="featured-badge">
               <span>Featured</span>
             </div>
 
-            <div class="featured-card">
+            <div class="featured-wrapper" data-item="fortnite">
               <img src="./assets/featured/featured_2.png" />
               <div class="featured-card-text">
                 <h3>
-                  <a href="#">Shark attack 3000!</a>
+                  <a href="#">Shark attack!</a>
                 </h3>
                 <div class="featured-author">
                   <img src="./assets/auth-img.png" />
@@ -194,17 +197,18 @@
 
         <!-- Box links -->
         <div class="overview-links">
-          <div class="btn-style link-select" data-item="all">All items</div>
-          <div class="btn-style" data-item="fort">Fortnite</div>
-          <div class="btn-style" data-item="robot">Robot Mania</div>
-          <div class="btn-style" data-item="kittie">Kittie Universe</div>
+          <div class="btn-style link-select ov-link" data-item="all">All items</div>
+          <div class="btn-style ov-link" data-item="fortnite">Fortnite</div>
+          <div class="btn-style ov-link" data-item="robot">Robot Mania</div>
+          <div class="btn-style ov-link" data-item="kittie">Kittie Universe</div>
+          <div class="btn-style ov-link" data-item="dragon">Red Dragons</div>
         </div>
         <!-- Box links end -->
 
         <!-- Box items -->
-        <div>
+        <div class="overview-cards-container">
           <!-- First item -->
-          <div class="featured-card">
+          <div class="card-wrapper" data-item="fortnite">
             <img src="./assets/product_img/fortnite1.png" />
             <div class="featured-card-text">
               <h3>
@@ -237,7 +241,7 @@
           <!-- First item end-->
 
           <!-- Second item -->
-          <div class="featured-card">
+          <div class="card-wrapper" data-item="kittie">
             <img src="./assets/product_img/kittie1.png" />
             <div class="featured-card-text">
               <h3>
@@ -270,7 +274,7 @@
           <!-- Second item end-->
 
           <!-- Third item -->
-          <div class="featured-card">
+          <div class="card-wrapper" data-item="robot">
             <img src="./assets/product_img/robot1.png" />
             <div class="featured-card-text">
               <h3>
@@ -285,7 +289,7 @@
               <div class="featured-stats">
                 <ul>
                   <li class="btn-style">$5</li>
-                  <li><i class="fas fa-shopping-cart"></i>2</li>
+                  <li><i class="fas fa-shopping-cart"></i> 2</li>
                   <li><i class="far fa-heart"></i></li>
                 </ul>
                 <ul>
@@ -303,7 +307,7 @@
           <!-- Third item end-->
 
           <!-- Fourth item -->
-          <div class="featured-card">
+          <div class="card-wrapper" data-item="fortnite">
             <img src="./assets/product_img/fortnite2.png" />
             <div class="featured-card-text">
               <h3>
@@ -318,7 +322,7 @@
               <div class="featured-stats">
                 <ul>
                   <li class="btn-style">$30</li>
-                  <li><i class="fas fa-shopping-cart"></i>4</li>
+                  <li><i class="fas fa-shopping-cart"></i> 4</li>
                   <li><i class="far fa-heart"></i></li>
                 </ul>
                 <ul>
@@ -336,7 +340,7 @@
           <!-- Fourth item end-->
 
           <!-- Fifth item -->
-          <div class="featured-card">
+          <div class="card-wrapper" data-item="kittie">
             <img src="./assets/product_img/kittie2.png" />
             <div class="featured-card-text">
               <h3>
@@ -351,7 +355,7 @@
               <div class="featured-stats">
                 <ul>
                   <li class="btn-style">$23</li>
-                  <li><i class="fas fa-shopping-cart"></i>1</li>
+                  <li><i class="fas fa-shopping-cart"></i> 1</li>
                   <li><i class="far fa-heart"></i></li>
                 </ul>
                 <ul>
@@ -369,7 +373,7 @@
           <!-- Fifth item end-->
 
           <!-- Sixth item -->
-          <div class="featured-card">
+          <div class="card-wrapper" data-item="robot">
             <img src="./assets/product_img/robot2.png" />
             <div class="featured-card-text">
               <h3>
@@ -384,7 +388,7 @@
               <div class="featured-stats">
                 <ul>
                   <li class="btn-style">$5</li>
-                  <li><i class="fas fa-shopping-cart"></i>0</li>
+                  <li><i class="fas fa-shopping-cart"></i> 1</li>
                   <li><i class="far fa-heart"></i></li>
                 </ul>
                 <ul>
@@ -400,12 +404,13 @@
             </div>
           </div>
           <!-- Sixth item end-->
+        </div>
+        <!-- Box items end -->
 
           <div class="btn-style btn-see-more">
             <a href="#">See more items</a>
           </div>
-        </div>
-        <!-- Box items end -->
+          
       </div>
     </section>
     <!-- ITEMS overview END -->
@@ -415,25 +420,25 @@
       <div class="stats-numbers">
         <div>
           <i class="fas fa-gamepad"></i>
-          <span>25,689</span>
+          <span data-count="countUp" data-value="3000">3000</span>
           <p>Items to trade</p>
         </div>
 
         <div>
           <i class="fas fa-exchange-alt"></i>
-          <span>77,689</span>
+          <span data-count="countUp" data-value="3000">3000</span>
           <p>Total trades</p>
         </div>
 
         <div>
           <i class="far fa-smile"></i>
-          <span>42,445</span>
+          <span data-count="countUp" data-value="3000">3000</span>
           <p>Happy customers</p>
         </div>
 
         <div>
           <i class="fas fa-users"></i>
-          <span>89,974</span>
+          <span data-count="countUp" data-value="3000">3000</span>
           <p>Members</p>
         </div>
       </div>
@@ -448,7 +453,8 @@
         <p>
           Subscribe to get the latest news, listings and offers information.
         </p>
-        <form action="#">
+        <form action="https://website.us20.list-manage.com/subscribe/post?u=dd2ca57b04f903eb53f387d9c&amp;id=764313c2d3"
+        method="post">
           <input
             type="text"
             placeholder="Enter your email adress"
@@ -472,7 +478,7 @@
         </div>
 
         <div class="contact">
-          <h4>Contacts:</h4>
+          <h4>Contact:</h4>
           <p>Chat: <a href="#">Discord</a></p>
           <p>Email Support: <a href="#">support@niftymarket.com</a></p>
           <p><a href="#">Terms</a> & <a href="#">Privacy</a></p>
@@ -489,5 +495,8 @@
     <!-- FOOTER END -->
 
     <script src="./components/navbar/navbar.js"></script>
+    <script src="./components/features_overview/overview.js"></script>
+    <script src="./components/statistics/statistics.js"></script>
+    <script src="./components/features_overview/cards.js"></script>
   </body>
 </html>

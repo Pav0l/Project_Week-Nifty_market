@@ -21,6 +21,7 @@
         text-align: center;
         color: white;
         padding-top: 2rem;
+        margin: 0 2rem;
     }
 
     .hero-search {
@@ -30,12 +31,13 @@
         padding: 1rem 0;
         margin: 1rem auto;
         width: 75%;
-
+        max-width: 600px;
+        
         form {
             .flex(center, center, column);
-
+            
             input, select {
-                padding: 2rem;
+                padding: 1rem;
                 margin: 0 0 1.5rem;
                 border-radius: 3px;
                 border: 1px solid grey;
@@ -49,6 +51,31 @@
             .search-btn {
                 padding: 1rem 1.5rem;
                 border-radius: 4px;
+            }
+        }
+
+        @media @desktop {
+            width: 50%;
+            form {
+                .flex(center, center, row);
+                padding: 2rem;
+
+                input, select {
+                    margin: 0 1.5rem 0 0;
+                    padding: 1rem;
+                    width: 56%;
+                    &:first-child {
+                        margin-top: 0;
+                    }
+                }
+
+                select {
+                    width: 24%;
+                }
+
+                button {
+                    width: 20%;
+                }
             }
         }
     }
