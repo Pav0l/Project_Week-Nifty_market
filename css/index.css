@@ -227,6 +227,11 @@ header div.navbar-area div.dropdown .dropdown-content .btn-login {
 header div.navbar-area div.dropdown .dropdown-hidden {
   display: none;
 }
+header div.navbar-area .user-nav a {
+  padding: 1rem 1.5rem;
+  border-radius: 4px;
+  color: white;
+}
 @media (min-width: 800px) {
   header div.navbar-area img {
     order: -1;
@@ -714,66 +719,11 @@ footer .social-links a {
   padding: 3rem 0;
   color: white;
 }
-.page-container .form-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: white;
-  margin: auto;
-  width: 100%;
-  height: 50%;
-}
-.page-container .form-container form {
-  margin: 0 auto;
-  width: 100%;
-}
-.page-container .form-container form .container-input-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 90%;
-  margin: 0 auto;
-}
-.page-container .form-container form .container-input-btn .input-holder {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 80%;
-}
-.page-container .form-container form .container-input-btn .input-holder input {
-  width: 80%;
-  padding: 1rem;
-  margin: 1rem 0;
-  border-radius: 100px;
-  border: 1px solid grey;
-  background-color: white;
-}
-.page-container .form-container form .container-input-btn .btn-wrapper {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: row;
-  width: 80%;
-}
-.page-container .form-container form .container-input-btn .btn-wrapper .btn-signup,
-.page-container .form-container form .container-input-btn .btn-wrapper .btn-login {
-  padding: 1rem 1.5rem;
-  border-radius: 4px;
-  font-weight: normal;
-  color: white;
-  margin: 1rem 2rem;
-}
-.page-container .form-container form .container-input-btn .btn-wrapper .btn-login {
-  background-color: #47B3A3;
-}
-.page-container .form-container .container-change {
+.page-container .container-change {
   width: 90%;
   margin: 2rem auto;
 }
-.page-container .form-container .container-change p {
+.page-container .container-change p {
   text-align: center;
 }
 @media (min-width: 800px) {
@@ -791,4 +741,69 @@ footer .social-links a {
     width: 50%;
     height: 100vh;
   }
+}
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  margin: auto;
+  width: 100%;
+  height: 50%;
+}
+.form-container form {
+  margin: 0 auto;
+  width: 100%;
+}
+.form-container form .container-input-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+}
+.form-container .user-form-text {
+  padding: 1rem;
+  margin: 1rem auto;
+  text-align: center;
+  width: 100%;
+  background-color: #49c5b6;
+  color: white;
+}
+.input-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+.input-holder input {
+  width: 80%;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 100px;
+  border: 1px solid grey;
+  background-color: white;
+}
+.btn-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  width: 80%;
+  margin: 0 auto;
+}
+.btn-wrapper .btn-signup,
+.btn-wrapper .btn-login {
+  padding: 1rem 1.5rem;
+  border-radius: 4px;
+  font-weight: normal;
+  color: white;
+  margin: 1rem 2rem;
+}
+.btn-wrapper .btn-login {
+  background-color: #47B3A3;
 }

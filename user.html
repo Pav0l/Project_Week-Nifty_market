@@ -9,47 +9,78 @@
 
     <title>Nifty - User</title>
 </head>
-<body>
 
-    <div class="form-container" style="display: flex; flex-direction: column">
-        <a href="./index.html">Home</a>
+<body>
+    <header>
+        <!-- NAVBAR area starts here -->
+        <div class="navbar-area">
+
+            <div class="dropdown">
+                <div class="dropdown-btn">
+                    <img src="./assets/menu.png"/>
+                </div>
+                <nav class="dropdown-content dropdown-hidden">
+                    <a href="./index.html">Home</a>
+                    <a href="#">Market</a>
+                    <a href="#">News</a>
+                    <a href="#">About</a>
+                </nav>
+            </div>
+
+            <img src="./assets/logo.png"/>
+
+            <div class="user-nav">
+                <a class="btn-style btn-signup" href="./user.html">Account</a>
+            </div>
+
+        </div>
+        <!-- NAVBAR end -->
+    </header>
+
+    <div class="form-container">
+
+        <h2 class="user-form-text">Add new item to market</h2>
 
         <form action="#">
-            <input
-                type="text"
-                placeholder="Enter Items Name"
-                name="iname"
-                required
-            />
+            <div class="input-holder">
+                <input
+                    type="text"
+                    placeholder="Items Name"
+                    name="iname"
+                    required
+                />
+    
+                <input
+                    type="text"
+                    placeholder="Authors Name"
+                    name="aname"
+                    required
+                />
+    
+                <input
+                    type="text"
+                    placeholder="Items Cost in $"
+                    name="icost"
+                    required
+                />
+    
+                <input
+                    type="text"
+                    placeholder="Game"
+                    name="igame"
+                    required
+                />
+            </div>
 
-            <input
-                type="text"
-                placeholder="Enter Authors Name"
-                name="aname"
-                required
-            />
-
-            <input
-                type="text"
-                placeholder="Enter Items Cost in $"
-                name="icost"
-                required
-            />
-
-            <input
-                type="text"
-                placeholder="Enter Game"
-                name="igame"
-                required
-            />                
-            
-            <button type="submit" class="btn-style btn-login" id="btn-create">Create</button>
+            <div class="btn-wrapper">
+                <button type="submit" class="btn-style btn-login" id="btn-create">Create</button>
+            </div>
         </form>
 
     </div>
 
 
-
+    <script src="./components/navbar/navbar.js"></script>
     <script src="./components/features_overview/cards.js" defer></script>
 </body>
 </html>
