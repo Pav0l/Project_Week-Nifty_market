@@ -87,16 +87,32 @@
     .flex(space-around, center, row);
     width: 80%;
     margin: 0 auto;
-
+/*
     .btn-signup, .btn-login {
         padding: 1rem 1.5rem;
         border-radius: 4px;
         font-weight: normal;
         color: white;
         margin: 1rem 2rem;
-    }
+        // &:hover {
+        //     color: @orange;
+        //     background-color: white;
+        //     border: 1px solid @orange;
+        // }
+    }*/
 
     .btn-login {
         background-color: @bluish-green;
+    }
+}
+
+.btn-signup, .btn-login {
+    padding: 1rem 1.5rem;
+    border-radius: 4px;
+    font-weight: normal;
+    color: white;
+    margin: 1rem 2rem;
+    &:hover {
+        animation-duration: 0s;
     }
 }

@@ -171,6 +171,21 @@ img {
   border: none;
   cursor: pointer;
 }
+.btn-style:hover {
+  animation-name: pulse;
+  animation-duration: 0.5s;
+}
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
 header div.navbar-area {
   display: flex;
   justify-content: space-between;
@@ -231,6 +246,12 @@ header div.navbar-area .user-nav a {
   padding: 1rem 1.5rem;
   border-radius: 4px;
   color: white;
+  border: 1px solid #E27D60;
+}
+header div.navbar-area .user-nav a:hover {
+  color: #E27D60;
+  background-color: white;
+  border: 1px solid #E27D60;
 }
 @media (min-width: 800px) {
   header div.navbar-area img {
@@ -795,15 +816,32 @@ footer .social-links a {
   flex-direction: row;
   width: 80%;
   margin: 0 auto;
+  /*
+    .btn-signup, .btn-login {
+        padding: 1rem 1.5rem;
+        border-radius: 4px;
+        font-weight: normal;
+        color: white;
+        margin: 1rem 2rem;
+        // &:hover {
+        //     color: @orange;
+        //     background-color: white;
+        //     border: 1px solid @orange;
+        // }
+    }*/
 }
-.btn-wrapper .btn-signup,
 .btn-wrapper .btn-login {
+  background-color: #47B3A3;
+}
+.btn-signup,
+.btn-login {
   padding: 1rem 1.5rem;
   border-radius: 4px;
   font-weight: normal;
   color: white;
   margin: 1rem 2rem;
 }
-.btn-wrapper .btn-login {
-  background-color: #47B3A3;
+.btn-signup:hover,
+.btn-login:hover {
+  animation-duration: 0s;
 }
