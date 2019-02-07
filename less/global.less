@@ -45,6 +45,24 @@ img {
     color: white;
     font-weight: bold;
     background-color: @redish;
-    border: 1px solid @redish;
+    border: none;
     cursor: pointer;
+    &:hover {
+        animation-name: pulse;
+        animation-duration: 0.5s;
+    }
+}
+
+@keyframes pulse {
+    from {
+      transform: scale3d(1, 1, 1);
+    }
+  
+    50% {
+      transform: scale3d(1.1, 1.1, 1.1);
+    }
+  
+    to {
+      transform: scale3d(1, 1, 1);
+    }
 }

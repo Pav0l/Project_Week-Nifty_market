@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./css/index.css" rel="stylesheet" />
+
+
+    <title>Nifty - User</title>
+</head>
+
+<body>
+    <header>
+        <!-- NAVBAR area starts here -->
+        <div class="navbar-area">
+
+            <div class="dropdown">
+                <div class="dropdown-btn">
+                    <img src="./assets/menu.png"/>
+                </div>
+                <nav class="dropdown-content dropdown-hidden">
+                    <a href="./index.html">Home</a>
+                    <a href="#">Market</a>
+                    <a href="#">News</a>
+                    <a href="#">About</a>
+                </nav>
+            </div>
+
+            <img src="./assets/logo.png"/>
+
+            <div class="user-nav">
+                <a class="btn-style btn-signup" href="./user.html">Account</a>
+            </div>
+
+        </div>
+        <!-- NAVBAR end -->
+    </header>
+
+    <div class="form-container">
+
+        <h2 class="user-form-text">Add new item to market</h2>
+
+        <form action="#" id="userForm">
+            <div class="input-holder">
+                <input
+                    type="text"
+                    placeholder="Items Name"
+                    name="iname"
+                    required
+                />
+    
+                <input
+                    type="text"
+                    placeholder="Authors Name"
+                    name="aname"
+                    required
+                />
+    
+                <input
+                    type="text"
+                    placeholder="Items Cost in $"
+                    name="icost"
+                    required
+                />
+    
+                <input
+                    type="text"
+                    placeholder="Game"
+                    name="igame"
+                    required
+                />
+            </div>
+
+            <div class="btn-wrapper">
+                <button type="submit" class="btn-style btn-signup" id="btn-create">Create</button>
+            </div>
+        </form>
+
+    </div>
+
+    <section class="table-container">
+
+        <h3 class="user-form-text">Items on market</h3>
+        
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Cost</th>
+                <th>Game</th>
+            </tr>
+
+        </table>
+    
+    </section>
+
+
+    <script src="./components/navbar/navbar.js"></script>
+    <script src="./components/features_overview/cards.js" defer></script>
+</body>
+</html>

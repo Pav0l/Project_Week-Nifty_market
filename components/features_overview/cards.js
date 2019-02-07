@@ -20,7 +20,7 @@ const itemsList = [
 ];
 
 // Create new Item and update the itemList array
-const createNewItem = (name, author, cost, game) => {
+function createNewItem(name, author, cost, game) {
     return itemsList.push(new CreateItem(name, author, cost, game));
 }
 
@@ -29,7 +29,6 @@ const contributors = () => {
     const contributorsList = itemsList.map(item => item.author);
     return contributorsList
 }
-// contributors();
 
 // Find top contributor
 const topContributor = cb => {
@@ -46,20 +45,56 @@ const topContributor = cb => {
         // set empty object as an initial value
     }, {});
 
-
     let author;
     // Create array from contributorObj and reduce it to find top contributor
     Object.keys(contributorObj).reduce((acc, item) => {        
         return author = contributorObj[item] > contributorObj[acc] ? item : acc;
     });
-
     return author;
 }
 
-console.log(topContributor(contributors)); // <- logs top contributor, print it on webpage
+
+// Create new table line with updated items of user
+const updateItemTable = (name, cost, game) => {
+    const tableEl = document.querySelector('table');
+    // create table lines
+    const newTr = document.createElement('tr');
+    const newName = document.createElement('td');
+    const newCost = document.createElement('td');
+    const newGame = document.createElement('td');
+    // add text to table lines
+    newName.innerText = name;
+    newCost.innerText = cost;
+    newGame.innerText = game;
+    // append lines to existing table
+    newTr.appendChild(newName);
+    newTr.appendChild(newCost);
+    newTr.appendChild(newGame);
+    tableEl.appendChild(newTr);
+}
 
 
+// grab all values from user form into variables
+const iname = document.querySelector('input[name="iname"]');
+const aname = document.querySelector('input[name="aname"]');
+const icost = document.querySelector('input[name="icost"]');
+const igame = document.querySelector('input[name="igame"]');
 
+//  add CLICK listener
+if (document.querySelector('#btn-create') !== null) {
+    document.querySelector('#btn-create').addEventListener('click', (e) => {
+        // Create new Item object via CreateItem class and push it to itemList array
+        createNewItem(iname.value, aname.value, icost.value, igame.value);
+        // Update user table with item
+        updateItemTable(iname.value, icost.value, igame.value);
+        alert(`Congrats ${aname.value}! ${iname.value} was added to the market!`)
+        document.querySelector('#userForm').reset();
+        e.preventDefault();
+    });
+}
 
-// link button to create Item with eventListener for method createNewItem
-createNewItem('John', 'authoris', '$5', 'Kittie');
+document.querySelector('a[href="./index.html"').addEventListener('click', e => {
+    // Save topContributors string in localStorage to pick up for index.html
+    localStorage.setItem('topAuthor', JSON.stringify(topContributor(contributors)));
+    window.location.replace('../index.html');
+})

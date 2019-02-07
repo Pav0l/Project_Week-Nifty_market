@@ -3,6 +3,8 @@ header div.navbar-area {
     padding: 0 1.5rem;
     position: relative;
     width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
 
     div.dropdown {
         z-index: 2;
@@ -55,6 +57,18 @@ header div.navbar-area {
             display: none;
         }
 
+    }
+
+    .user-nav a {
+        padding: 1rem 1.5rem;
+        border-radius: 4px;
+        color: white;
+        border: 1px solid @redish;
+        &:hover {
+            color: @redish;
+            background-color: white;
+            border: 1px solid @redish;
+        }
     }
 
     @media @tablet {
