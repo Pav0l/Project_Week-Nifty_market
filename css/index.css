@@ -168,7 +168,7 @@ img {
   color: white;
   font-weight: bold;
   background-color: #E27D60;
-  border: 1px solid #E27D60;
+  border: none;
   cursor: pointer;
 }
 header div.navbar-area {
