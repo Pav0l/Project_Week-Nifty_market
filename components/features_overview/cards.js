@@ -64,6 +64,7 @@ const igame = document.querySelector('input[name="igame"]');
 if (document.querySelector('#btn-create') !== null) {
     document.querySelector('#btn-create').addEventListener('click', (e) => {
         createNewItem(iname.value, aname.value, icost.value, igame.value);
+        document.querySelector('#userForm').reset();
         e.preventDefault();
     });
 }
