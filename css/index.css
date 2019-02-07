@@ -705,41 +705,43 @@ footer .social-links a {
   align-items: center;
   flex-direction: column;
   background-color: white;
-  margin: auto 0;
-  width: 100vw;
+  margin: auto;
+  width: 100%;
   height: 50%;
-  border: 1px solid red;
 }
 .page-container .form-container form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  border: 1px solid blue;
+  margin: 0 auto;
+  width: 100%;
 }
 .page-container .form-container form .container-input-btn {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 2rem;
   width: 90%;
-  border: 1px solid green;
+  margin: 0 auto;
 }
 .page-container .form-container form .container-input-btn .input-holder {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 80%;
 }
 .page-container .form-container form .container-input-btn .input-holder input {
   width: 80%;
-  min-width: 30rem;
   padding: 1rem;
   margin: 1rem 0;
   border-radius: 100px;
   border: 1px solid grey;
   background-color: white;
+}
+.page-container .form-container form .container-input-btn .btn-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  width: 80%;
 }
 .page-container .form-container form .container-input-btn .btn-wrapper .btn-signup,
 .page-container .form-container form .container-input-btn .btn-wrapper .btn-login {
@@ -752,13 +754,12 @@ footer .social-links a {
 .page-container .form-container form .container-input-btn .btn-wrapper .btn-login {
   background-color: #47B3A3;
 }
-.page-container .form-container form .container-change {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+.page-container .form-container .container-change {
   width: 90%;
   margin: 2rem auto;
+}
+.page-container .form-container .container-change p {
+  text-align: center;
 }
 @media (min-width: 800px) {
   .page-container {
