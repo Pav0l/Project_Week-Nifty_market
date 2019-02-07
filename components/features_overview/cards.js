@@ -54,16 +54,40 @@ const topContributor = cb => {
 }
 
 
+// Create new table line with updated items of user
+const updateItemTable = (name, cost, game) => {
+    const tableEl = document.querySelector('table');
+    // create table lines
+    const newTr = document.createElement('tr');
+    const newName = document.createElement('td');
+    const newCost = document.createElement('td');
+    const newGame = document.createElement('td');
+    // add text to table lines
+    newName.innerText = name;
+    newCost.innerText = cost;
+    newGame.innerText = game;
+    // append lines to existing table
+    newTr.appendChild(newName);
+    newTr.appendChild(newCost);
+    newTr.appendChild(newGame);
+    tableEl.appendChild(newTr);
+}
+
+
 // grab all values from user form into variables
 const iname = document.querySelector('input[name="iname"]');
 const aname = document.querySelector('input[name="aname"]');
 const icost = document.querySelector('input[name="icost"]');
 const igame = document.querySelector('input[name="igame"]');
 
-//  add CLICK listener and callback to create new item
+//  add CLICK listener
 if (document.querySelector('#btn-create') !== null) {
     document.querySelector('#btn-create').addEventListener('click', (e) => {
+        // Create new Item object via CreateItem class and push it to itemList array
         createNewItem(iname.value, aname.value, icost.value, igame.value);
+        // Update user table with item
+        updateItemTable(iname.value, icost.value, igame.value);
+        alert(`Congrats ${aname.value}! ${iname.value} was added to the market!`)
         document.querySelector('#userForm').reset();
         e.preventDefault();
     });

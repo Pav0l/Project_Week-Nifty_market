@@ -785,13 +785,15 @@ footer .social-links a {
   width: 90%;
   margin: 0 auto;
 }
-.form-container .user-form-text {
-  padding: 1rem;
-  margin: 1rem auto;
-  text-align: center;
+.table-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  margin: 2rem auto;
   width: 100%;
-  background-color: #49c5b6;
-  color: white;
+  height: 50%;
 }
 .input-holder {
   display: flex;
@@ -800,6 +802,7 @@ footer .social-links a {
   flex-direction: column;
   width: 80%;
   margin: 0 auto;
+  max-width: 1024px;
 }
 .input-holder input {
   width: 80%;
@@ -831,4 +834,31 @@ footer .social-links a {
 .btn-signup:hover,
 .btn-login:hover {
   animation-duration: 0s;
+}
+.user-form-text {
+  padding: 1rem;
+  margin: 1rem auto;
+  text-align: center;
+  width: 100%;
+  background-color: #49c5b6;
+  color: white;
+}
+table {
+  width: 100%;
+  max-width: 1024px;
+  margin-top: 1%;
+  text-align: center;
+  font-size: 1.6rem;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+tr:first-child {
+  font-weight: bold;
+}
+th,
+td {
+  border-top: 1px solid #cfcfcf;
+  border-bottom: 1px solid #cfcfcf;
+  padding: 2rem 0;
 }
