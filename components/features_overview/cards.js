@@ -53,13 +53,6 @@ const topContributor = cb => {
     return author;
 }
 
-// Create new div with updated Top Author - author with the most items on market.
-const formDiv = document.querySelector('.form-container');
-const updateTopAuthor = (cb) => {
-    const newDiv = document.createElement('div');
-    newDiv.innerText = `Top author is ${cb}`;
-    formDiv.appendChild(newDiv);
-}
 
 // grab all values from user form into variables
 const iname = document.querySelector('input[name="iname"]');
@@ -67,11 +60,16 @@ const aname = document.querySelector('input[name="aname"]');
 const icost = document.querySelector('input[name="icost"]');
 const igame = document.querySelector('input[name="igame"]');
 
-// grab "CREATE" button to create new Item
-const createBtn = document.querySelector('#btn-create');
 //  add CLICK listener and callback to create new item
-createBtn.addEventListener('click', (e) => {
-    createNewItem(iname.value, aname.value, icost.value, igame.value);
-    updateTopAuthor(topContributor(contributors));
-    e.preventDefault();
-});
+if (document.querySelector('#btn-create') !== null) {
+    document.querySelector('#btn-create').addEventListener('click', (e) => {
+        createNewItem(iname.value, aname.value, icost.value, igame.value);
+        e.preventDefault();
+    });
+}
+
+document.querySelector('a[href="./index.html"').addEventListener('click', e => {
+    // Save topContributors string in localStorage to pick up for index.html
+    localStorage.setItem('topAuthor', JSON.stringify(topContributor(contributors)));
+    window.location.replace('../index.html');
+})
