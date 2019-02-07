@@ -194,6 +194,8 @@ header div.navbar-area {
   padding: 0 1.5rem;
   position: relative;
   width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
 }
 header div.navbar-area div.dropdown {
   z-index: 2;
