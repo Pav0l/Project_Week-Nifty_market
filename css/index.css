@@ -229,6 +229,7 @@ header div.navbar-area div.dropdown .dropdown-content a {
   color: #49c5b6;
   padding: 0.5rem 0;
   z-index: 2;
+  font-weight: 600;
 }
 header div.navbar-area div.dropdown .dropdown-content .btn-signup,
 header div.navbar-area div.dropdown .dropdown-content .btn-login {
@@ -325,6 +326,7 @@ header div.navbar-area .user-nav a:hover {
   border: 1px solid grey;
   width: 80%;
   opacity: 0.8;
+  font-family: 'Roboto', sans-serif;
 }
 .hero .hero-search form input:first-child,
 .hero .hero-search form select:first-child {
@@ -367,7 +369,7 @@ header div.navbar-area .user-nav a:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: linear-gradient(to bottom right, #E27D60, #47B3A3);
+  background-color: #E27D60;
   color: white;
   text-align: center;
   padding-top: 4rem;
@@ -385,7 +387,7 @@ header div.navbar-area .user-nav a:hover {
   overflow: hidden;
 }
 .featured-container .featured-box-collection .featured-box .featured-badge {
-  background-color: #DF6C4F;
+  background-color: #47B3A3;
   transform: rotate(-45deg);
   position: absolute;
   line-height: 35px;
@@ -595,7 +597,7 @@ header div.navbar-area .user-nav a:hover {
 .stats-section {
   width: 100%;
   margin: 2rem 0 0;
-  background-color: #DF6C4F;
+  background-color: #E27D60;
   color: white;
 }
 .stats-section .stats-numbers {
@@ -719,7 +721,7 @@ footer .social-links {
 footer .social-links a {
   font-size: 2rem;
   padding: 0 1rem;
-  color: #DF6C4F;
+  color: #47B3A3;
 }
 .page-container {
   display: flex;
@@ -844,7 +846,7 @@ footer .social-links a {
   margin: 1rem auto;
   text-align: center;
   width: 100%;
-  background-color: #49c5b6;
+  background-color: #E27D60;
   color: white;
 }
 table {
