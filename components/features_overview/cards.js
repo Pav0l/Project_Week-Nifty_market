@@ -9,13 +9,13 @@ class CreateItem {
 }
 
 const itemsList = [
-    { name: "Wizard Kittie", author: "Cool Author", cost: "$30", game: "Kittie", featured: true },
-    { name: "Shark attack!", author: "Mega Author", cost: "$45", game: "Fortnite", featured: true },
-    { name: "Coolio costume", author: "Johny Pasta", cost: "$15", game: "Fortnite", featured: false },
-    { name: "Adorable Meow", author: "Mr. Meow", cost: "$11", game: "Kittie", featured: false },
-    { name: "Squid them up!", author: "Aquarius Nauticus", cost: "$30", game: "Fortnite", featured: false },
+    { name: "Glork", author: "Cool Author", cost: "$30", game: "Alien", featured: true },
+    { name: "Zork", author: "Mega Author", cost: "$45", game: "Alien", featured: true },
+    { name: "King Frank", author: "Johny Pasta", cost: "$15", game: "Knights", featured: false },
+    { name: "Loyal Stu", author: "Mr. Hook", cost: "$11", game: "Pirates of the Sea", featured: false },
+    { name: "Adorable Green", author: "george251", cost: "$30", game: "Knights", featured: false },
     { name: "Bender Wannabe", author: "Gear Head", cost: "$5", game: "Robot", featured: false },
-    { name: "Mouse Catcher", author: "Mr. Meow", cost: "$23", game: "Kittie", featured: false },
+    { name: "Radio Bird", author: "Mr. Hook", cost: "$23", game: "Pirates of the Sea", featured: false },
     { name: "Frank Nogoodson", author: "johny587", cost: "$5", game: "Robot", featured: false },
 ];
 
